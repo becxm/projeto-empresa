@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body {
+    background-image: url('../Imagens/backgroundapenas.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 1500px;
+    min-width: 500px;
+}

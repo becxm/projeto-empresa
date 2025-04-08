@@ -1,0 +1,26 @@
+{
+  "FolderOrderSettings": [
+    {"name":"textbox","order":3,"path":"folders/Objects/textbox.yy",},
+    {"name":"textbox things","order":11,"path":"folders/Sprites/textbox things.yy",},
+  ],
+  "ResourceOrderSettings": [
+    {"name":"sBack2","order":9,"path":"sprites/sBack2/sBack2.yy",},
+    {"name":"sShop","order":6,"path":"sprites/sShop/sShop.yy",},
+    {"name":"sBack","order":5,"path":"sprites/sBack/sBack.yy",},
+    {"name":"oDemo","order":1,"path":"objects/oDemo/oDemo.yy",},
+    {"name":"sItem_carinha","order":1,"path":"sprites/sItem_carinha/sItem_carinha.yy",},
+    {"name":"oWall","order":1,"path":"objects/oWall/oWall.yy",},
+    {"name":"oPc","order":5,"path":"objects/oPc/oPc.yy",},
+    {"name":"fnt_name","order":1,"path":"fonts/fnt_name/fnt_name.yy",},
+    {"name":"oInteraction","order":4,"path":"objects/oInteraction/oInteraction.yy",},
+    {"name":"oCamera","order":2,"path":"objects/oCamera/oCamera.yy",},
+    {"name":"oController","order":2,"path":"objects/oController/oController.yy",},
+    {"name":"sPlayerA","order":1,"path":"sprites/sPlayerA/sPlayerA.yy",},
+    {"name":"oShop","order":1,"path":"objects/oShop/oShop.yy",},
+    {"name":"sInteract","order":10,"path":"sprites/sInteract/sInteract.yy",},
+    {"name":"sSensor","order":1,"path":"sprites/sSensor/sSensor.yy",},
+    {"name":"sCrTopics","order":2,"path":"scripts/sCrTopics/sCrTopics.yy",},
+    {"name":"sCrActions","order":1,"path":"scripts/sCrActions/sCrActions.yy",},
+    {"name":"sPlayerR","order":2,"path":"sprites/sPlayerR/sPlayerR.yy",},
+  ],
+}

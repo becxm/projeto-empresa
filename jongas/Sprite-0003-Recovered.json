@@ -1,0 +1,56 @@
+{ "frames": {
+   "Sprite-0003-Recovered 0.": {
+    "frame": { "x": 0, "y": 0, "w": 220, "h": 279 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 220, "h": 279 },
+    "sourceSize": { "w": 220, "h": 279 },
+    "duration": 100
+   },
+   "Sprite-0003-Recovered 1.": {
+    "frame": { "x": 220, "y": 0, "w": 220, "h": 279 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 220, "h": 279 },
+    "sourceSize": { "w": 220, "h": 279 },
+    "duration": 100
+   },
+   "Sprite-0003-Recovered 2.": {
+    "frame": { "x": 440, "y": 0, "w": 220, "h": 279 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 220, "h": 279 },
+    "sourceSize": { "w": 220, "h": 279 },
+    "duration": 100
+   },
+   "Sprite-0003-Recovered 3.": {
+    "frame": { "x": 660, "y": 0, "w": 220, "h": 279 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 220, "h": 279 },
+    "sourceSize": { "w": 220, "h": 279 },
+    "duration": 100
+   },
+   "Sprite-0003-Recovered 4.": {
+    "frame": { "x": 880, "y": 0, "w": 220, "h": 279 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 220, "h": 279 },
+    "sourceSize": { "w": 220, "h": 279 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "https://github.com/LibreSprite/LibreSprite/",
+  "version": "1.2-973d0e3d-SDL",
+  "image": "Sprite-0003-Recovered.png",
+  "format": "RGBA8888",
+  "size": { "w": 1100, "h": 279 },
+  "scale": "1",
+  "frameTags": [
+  ],
+  "layers": [
+   { "name": "Layer 1", "opacity": 255, "blendMode": "normal" }
+  ]
+ }
+}

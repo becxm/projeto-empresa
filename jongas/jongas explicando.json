@@ -1,0 +1,59 @@
+{ "frames": {
+   "jongas explicando 0.ase": {
+    "frame": { "x": 0, "y": 0, "w": 200, "h": 200 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 200 },
+    "sourceSize": { "w": 200, "h": 200 },
+    "duration": 130
+   },
+   "jongas explicando 1.ase": {
+    "frame": { "x": 200, "y": 0, "w": 200, "h": 200 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 200 },
+    "sourceSize": { "w": 200, "h": 200 },
+    "duration": 130
+   },
+   "jongas explicando 2.ase": {
+    "frame": { "x": 400, "y": 0, "w": 200, "h": 200 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 200 },
+    "sourceSize": { "w": 200, "h": 200 },
+    "duration": 130
+   },
+   "jongas explicando 3.ase": {
+    "frame": { "x": 600, "y": 0, "w": 200, "h": 200 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 200 },
+    "sourceSize": { "w": 200, "h": 200 },
+    "duration": 130
+   },
+   "jongas explicando 4.ase": {
+    "frame": { "x": 800, "y": 0, "w": 200, "h": 200 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 200 },
+    "sourceSize": { "w": 200, "h": 200 },
+    "duration": 130
+   },
+   "jongas explicando 5.ase": {
+    "frame": { "x": 1000, "y": 0, "w": 200, "h": 200 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 200, "h": 200 },
+    "sourceSize": { "w": 200, "h": 200 },
+    "duration": 130
+   }
+ },
+ "meta": {
+  "app": "https://github.com/LibreSprite/LibreSprite/",
+  "version": "1.2-973d0e3d-SDL",
+  "image": "C:\\Users\\usuario\\Desktop\\jongas\\jongas explicando.png",
+  "format": "RGBA8888",
+  "size": { "w": 1200, "h": 200 },
+  "scale": "1"
+ }
+}

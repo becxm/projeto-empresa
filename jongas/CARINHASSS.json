@@ -1,0 +1,19 @@
+{ "frames": {
+   "CARINHASSS.ase": {
+    "frame": { "x": 0, "y": 0, "w": 257, "h": 340 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 257, "h": 340 },
+    "sourceSize": { "w": 257, "h": 340 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "https://github.com/LibreSprite/LibreSprite/",
+  "version": "1.2-973d0e3d-SDL",
+  "image": "C:\\Users\\usuario\\Desktop\\jongas\\CARINHASSS.png",
+  "format": "RGBA8888",
+  "size": { "w": 257, "h": 340 },
+  "scale": "1"
+ }
+}
