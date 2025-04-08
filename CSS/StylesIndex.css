@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Informações */
+:root {
+    --cor01: #191427;
+    --cor02: #381b74;
+    --cor03: 
+    --cor04: 
+    --cor05: 
+    --cor06: 
+}
+
+:root {
+    --font01: "Mulish", sans-serif;
+    --font02: "Pixelify Sans", sans-serif;
+    --font03: "Work Sans", sans-serif;
+}
+
+:root {
+   --cursor-default: url(file:///C:/Jongas%20Empresa/Imagens/Mouse.png), auto;
+   --cursor-pointer: url(file:///C:/Jongas%20Empresa/Imagens/MouseClick.png), auto;
+}
+
+/* Interface */
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+a, button {
+    cursor: var(--cursor-pointer);
+
+}
+
+html {
+    cursor: var(--cursor-default);
+}
+
+body{
+    background-image: url(file:///C:/Jongas%20Empresa/Imagens/backgroundapenas.png);
+    color: white;
+    padding-top: 150px;
+}
+
+/* cabeçalho */
+
+header {
+    padding: 28px 8%;
+    background-color: var(--cor01);
+    margin-bottom: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#logo-text {
+    font-family:"Pixelify Sans", sans-serif;   
+    font-size: 40px;
+    color: white;
+    margin-right: 900px; 
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_logo {
+    margin-right: 24px;
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    font-family: "Mulish", sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s;
+}
+
+.nav-item a:hover {
+    color: var(--cor02);
+}
+
+.arrow {
+    transition: transform 0.3s;
+}
+
+.nav-item a:hover .arrow {
+    transform: rotate(90deg); 
+}
