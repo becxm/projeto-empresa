@@ -40,8 +40,10 @@ html {
 }
 
 body{
-    background-color: black;
     background-image: url(../Imagens/backgroundapenas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     color: white;
     padding-top: 150px;
 }
