@@ -1,0 +1,24 @@
+{ "frames": {
+   "Sprite-0015": {
+    "frame": { "x": 0, "y": 0, "w": 866, "h": 568 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 866, "h": 568 },
+    "sourceSize": { "w": 866, "h": 568 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "https://github.com/LibreSprite/LibreSprite/",
+  "version": "1.2-973d0e3d-SDL",
+  "image": "C:\\Users\\usuario\\Desktop\\jongas\\ideia de backgroudn.png",
+  "format": "RGBA8888",
+  "size": { "w": 866, "h": 568 },
+  "scale": "1",
+  "frameTags": [
+  ],
+  "layers": [
+   { "name": "Layer 1", "opacity": 255, "blendMode": "normal" }
+  ]
+ }
+}

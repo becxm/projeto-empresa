@@ -1,0 +1,124 @@
+{ "frames": {
+   "jungles idle rmk 0.ase": {
+    "frame": { "x": 0, "y": 0, "w": 82, "h": 84 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 82, "h": 84 },
+    "sourceSize": { "w": 82, "h": 84 },
+    "duration": 70
+   },
+   "jungles idle rmk 1.ase": {
+    "frame": { "x": 82, "y": 0, "w": 82, "h": 84 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 82, "h": 84 },
+    "sourceSize": { "w": 82, "h": 84 },
+    "duration": 70
+   },
+   "jungles idle rmk 2.ase": {
+    "frame": { "x": 164, "y": 0, "w": 82, "h": 84 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 82, "h": 84 },
+    "sourceSize": { "w": 82, "h": 84 },
+    "duration": 70
+   },
+   "jungles idle rmk 3.ase": {
+    "frame": { "x": 246, "y": 0, "w": 82, "h": 84 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 82, "h": 84 },
+    "sourceSize": { "w": 82, "h": 84 },
+    "duration": 70
+   },
+   "jungles idle rmk 4.ase": {
+    "frame": { "x": 328, "y": 0, "w": 82, "h": 84 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 82, "h": 84 },
+    "sourceSize": { "w": 82, "h": 84 },
+    "duration": 70
+   },
+   "jungles idle rmk 5.ase": {
+    "frame": { "x": 410, "y": 0, "w": 82, "h": 84 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 82, "h": 84 },
+    "sourceSize": { "w": 82, "h": 84 },
+    "duration": 70
+   },
+   "jungles idle rmk 6.ase": {
+    "frame": { "x": 492, "y": 0, "w": 82, "h": 84 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 82, "h": 84 },
+    "sourceSize": { "w": 82, "h": 84 },
+    "duration": 70
+   },
+   "jungles idle rmk 7.ase": {
+    "frame": { "x": 574, "y": 0, "w": 82, "h": 84 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 82, "h": 84 },
+    "sourceSize": { "w": 82, "h": 84 },
+    "duration": 70
+   },
+   "jungles idle rmk 8.ase": {
+    "frame": { "x": 656, "y": 0, "w": 82, "h": 84 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 82, "h": 84 },
+    "sourceSize": { "w": 82, "h": 84 },
+    "duration": 70
+   },
+   "jungles idle rmk 9.ase": {
+    "frame": { "x": 738, "y": 0, "w": 82, "h": 84 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 82, "h": 84 },
+    "sourceSize": { "w": 82, "h": 84 },
+    "duration": 70
+   },
+   "jungles idle rmk 10.ase": {
+    "frame": { "x": 820, "y": 0, "w": 82, "h": 84 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 82, "h": 84 },
+    "sourceSize": { "w": 82, "h": 84 },
+    "duration": 70
+   },
+   "jungles idle rmk 11.ase": {
+    "frame": { "x": 902, "y": 0, "w": 82, "h": 84 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 82, "h": 84 },
+    "sourceSize": { "w": 82, "h": 84 },
+    "duration": 70
+   },
+   "jungles idle rmk 12.ase": {
+    "frame": { "x": 984, "y": 0, "w": 82, "h": 84 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 82, "h": 84 },
+    "sourceSize": { "w": 82, "h": 84 },
+    "duration": 70
+   }
+ },
+ "meta": {
+  "app": "https://github.com/LibreSprite/LibreSprite/",
+  "version": "1.2-973d0e3d-SDL",
+  "image": "C:\\Users\\usuario\\Desktop\\jongas\\jungles idle rmk.png",
+  "format": "RGBA8888",
+  "size": { "w": 1066, "h": 84 },
+  "scale": "1",
+  "frameTags": [
+  ],
+  "layers": [
+   { "name": "esboco", "opacity": 56, "blendMode": "normal" },
+   { "name": "corpo", "opacity": 255, "blendMode": "normal" },
+   { "name": "cabeca e braco", "opacity": 255, "blendMode": "normal" },
+   { "name": "Layer 1", "opacity": 255, "blendMode": "normal" },
+   { "name": "roda", "opacity": 255, "blendMode": "normal" }
+  ]
+ }
+}
