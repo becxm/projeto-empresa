@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/StylesTeste.css">
+    <title>Document</title>
+</head>
+<body class="w3-container">
+    <div class="w3-content content">
+    <img src="Imagens/teste2.png" alt="gameboy" width="100%">
+    <button class="btn" onclick="trocarTexto()">
+        <img src="Imagens/teste.png" alt="direita" width="120%">
+    </button>
+    <p id="text">Texto inicial aqui </p>
+    </div>
+    <script>
+        const textos = [
+            "texto inicial aqui",
+            "Esse é o segundo texto!",
+            "e esse é o terceiro texto!"
+        ];
+        let index= 0;
+
+        function typeWriter(text, i = 0) {
+      const el = document.getElementById("text");
+      if (i === 0) el.textContent = ""; 
+      if (i < text.length) {
+        el.textContent += text.charAt(i);
+        setTimeout(() => typeWriter(text, i + 1), 50); 
+      }
+    }
+
+    function trocarTexto() {
+      index = (index + 1) % textos.length;
+      typeWriter(textos[index]);
+    }
+
+    window.onload = () => typeWriter(textos[0]);
+  </script>
+</body>
+</html>

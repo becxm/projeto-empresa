@@ -1,0 +1,29 @@
+.content {
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.btn {
+    position: absolute;
+    top: 40%;
+    left: 80%;
+    transform: translate(-30%, -50%);
+    -ms-transform: translate(-30%, -50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#text {
+    position: absolute;
+    top: 25%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 100%;
+    align-items: center;
+}
