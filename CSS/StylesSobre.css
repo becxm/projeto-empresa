@@ -112,18 +112,14 @@ header {
 
 #section_one {
     color: white;
-    font-family: var(--font02);
     text-transform: uppercase;
     text-align: center;
     margin-top: 200px;
 }
 
-#section_one p {
-    font-family: var(--font03);
-}
-
 .text-primary {
     font-size: 50px;
+    font-family: var(--font02);
 }
 
 .selection-container {
@@ -149,8 +145,14 @@ header {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    animation: pulse 1.50s infinite;
 }
 
+
+@keyframes pulse {
+    0%, 100% { transform: translateY(-220%, -40%) scale(1);}
+    50% { transform: translate(-220%, -40%) scale(1.06);}
+}
 .btn-left {
     position: absolute;
     top: 80%;
@@ -159,6 +161,16 @@ header {
     border: none;
     background-color: transparent;
     cursor: pointer;
+    animation: pulse-left 1.50s infinite;
+}
+
+.btn:hover, .btn-left:hover {
+    animation: none;
+}
+
+@keyframes pulse-left {
+    0%, 100% { transform: translateY(180%, -40%) scale(1);}
+    50% { transform: translate(180%, -40%) scale(1.06);}
 }
 
 #text {
@@ -168,7 +180,7 @@ header {
     left: 49%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    font-size: 100%;
+    font-size: 80%;
     text-align: left;
     width: 24%;
     color: #32cd32;
