@@ -1,29 +1,242 @@
-.content {
-    position: relative;
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* Informações */
+:root {
+    --cor01: #191427;
+    --cor02: #381b74;
+    --cor03: 
+    --cor04: 
+    --cor05: 
+    --cor06: 
 }
 
-.image {
+:root {
+    --font01: "Mulish", sans-serif;
+    --font02: "Pixelify Sans", sans-serif;
+    --font03: "Work Sans", sans-serif;
+    --font04: "Press Start 2P", system-ui;
+}
+
+:root {
+   --cursor-default: url(../Imagens/Mouse.png), auto;
+   --cursor-pointer: url(../Imagens/MouseClick.png), auto;
+}
+
+/* Interface */
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+a, button {
+    cursor: var(--cursor-pointer);
+
+}
+
+html {
+    cursor: var(--cursor-default);
+}
+
+body{
+    background-image: url(../Imagens/backgroundapenas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding-top: 150px;
+}
+
+
+/* cabeçalho */
+
+header {
+    padding: 28px 8%;
+    background-color: var(--cor01);
+    margin-bottom: 100px;
+    position: fixed;
+    top: 0;
     width: 100%;
+    z-index: 1000;
+}
+
+#logo-text {
+    font-family:"Pixelify Sans", sans-serif;   
+    font-size: 40px;
+    color: white;
+    margin-right: auto;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_logo {
+    margin-right: 24px;
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    font-family: "Mulish", sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s;
+}
+
+.nav-item a:hover {
+    color: var(--cor02);
+}
+
+.arrow {
+    transition: transform 0.3s;
+}
+
+.nav-item a:hover .arrow {
+    transform: rotate(90deg); 
+}
+
+
+/* Menu */
+
+#section_one {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.text-primary {
+    font-size: 50px;
+    font-family: var(--font02);
+}
+
+.selection-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 50px 5%;
+}
+
+.selection-container img.img-gameboy {
     height: auto;
+    width: 75%;
 }
 
 .btn {
     position: absolute;
-    top: 40%;
-    left: 80%;
-    transform: translate(-30%, -50%);
-    -ms-transform: translate(-30%, -50%);
+    top: 80%;
+    left: 90%;
+    transform: translate(-220%, -40%);
+    -ms-transform: translate(-220%, -40%);
     background-color: transparent;
     border: none;
     cursor: pointer;
+    animation: pulse 1.50s infinite;
 }
+
+
+@keyframes pulse {
+    0%, 100% { transform: translateY(-220%, -40%) scale(1);}
+    50% { transform: translate(-220%, -40%) scale(1.06);}
+}
+.btn-left {
+    position: absolute;
+    top: 80%;
+    right: 90%;
+    transform: translate(180%, -40%);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    animation: pulse-left 1.50s infinite;
+}
+
+.btn:hover, .btn-left:hover {
+    animation: none;
+}
+
+
 
 #text {
     position: absolute;
-    top: 25%;
-    left: 52%;
+    font-family: var(--font04);
+    top: 85%;
+    left: 49%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    font-size: 100%;
-    align-items: center;
+    font-size: 80%;
+    text-align: left;
+    width: 24%;
+    color: #32cd32;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    line-height: 1.5;
 }
+
+#text::after {
+    content: '|';
+    animation: blink 1s infinite;
+    color: white;
+    margin-left: 5px;
+}
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { OPACITY: 0;}
+}
+
+
+@media (max-width: 768px) {
+    .selection-container {
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .selection-container img.img-gameboy {
+      width: 100%;
+    }
+  
+    #text {
+      position: absolute;
+      width: 52%;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 8.5px;
+      line-height: 1.3;
+      padding: 8px;
+    }
+  
+    .btn {
+      position: absolute;
+      top: 55%;
+      left: 85%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .btn-left {
+      position: absolute;
+      top: 55%;
+      left: 15%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .text-primary {
+      font-size: 22px;
+    }
+  }
+  
