@@ -3,36 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contatos</title>
+    <title>Jongas | Contatos</title>
     <link rel="stylesheet" href="CSS/stylerebeca.css">
+    <link rel="shortcut icon" href="Imagens/JongasLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="Javascript/app.js" defer></script>
 </head>
 <body>
     <header>
-
+        <nav id="navbar">
+            <img id="nav_logo" src="Imagens/JongasLogo.png" alt="Logo Jongas"
+                height="80px">
+            <div id="logo-text">JONGAS</div>
+            <ul id="nav_list">
+                <li class="nav-item">
+                    <a href="Index.html">
+                        Início <i class="fa-solid fa-chevron-right arrow"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services">
+                        Serviços <i class="fa-solid fa-chevron-right arrow"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#news">
+                        Novidades <i class="fa-solid fa-chevron-right arrow"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="Sobre.html">
+                        Sobre <i class="fa-solid fa-chevron-right arrow"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact">
+                        Contato <i class="fa-solid fa-chevron-right arrow"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
+        <section class="text">
+            <h1>Empresa JONGAS</h1>
+            <p>Somos uma empresa especializada em soluções digitais completas.</p>
+            <h2>Selecione um meio de contato: </h2>
+        </section>
         <section class="slider-card">
-            <div class="slider">
-                <div class="item">
-                    <h2>Slide 1</h2>
-                </div>
-                <div class="item">
-                    <h2>Slide 2</h2>
-                </div>
-                <div class="item" >
-                    <h2>Slide 3</h2>
-                </div>
-                <div class="item">
-                    <h2>Slide 4</h2>
-                </div>
-                <div class="item">
-                    <h2>Slide 5</h2>
-                </div>
+                <a class="link-slider" href="#text-game">
+                    <div class="slider" >
+                        <div class="item">
+                        <img class="img-slider" src="Imagens/joytick-sem fundo.png" alt="">
+                    </div>
+                </a>
+                <a class="link-slider" href="#whatsapp">
+                    <div class="item">
+                        <img class="img-center" src="Imagens/whatsapp-logo.webp" alt="">
+                    </div>
+                </a>
+                <a class="link-slider" href="#linkedin">
+                    <div class="item" >
+                        <img class="img-center" src="Imagens/linkedin-logo.webp" alt="">
+                    </div>
+                </a>
+                <a class="link-slider" href="#instagram">
+                    <div class="item">
+                        <img class="img-center" src="Imagens/instagram-logo.webp" alt="">
+                    </div>
+                </a>
+                <a class="link-slider" href="#email">
+                    <div class="item">
+                        <img class="img-slider" src="Imagens/email-pixel-semfundo.png" alt=""> 
+                    </div>
+                </a>
                 <button id="next">></button>
                 <button id="prev"><</button>
             </div>
+        </section>
 
-            <script src="Javascript/app.js"></script>
+        <section id="whatsapp">
+            <div class="fundo2">
+                <p>N</p>
+            </div>
+        </section>
+
+        <section id="linkedin">
+            <div class="fundo2">
+                
+            </div>
+        </section>
+
+        <section id="instagram">
+            <div class="fundo2">
+                
+            </div>
+        </section>
+
+        <section id="email">
+            <div class="fundo2">
+                
+            </div>
+        </section>
+
+        <section id="text-game">
+            <h2>Agradecemos o seu contato. Aguarde nossa resposta e aproveite esse tempo da melhor forma possível.</h2>
+        </section>
+        <section class="fundo">
+            <div id="iframe">
+                <iframe src="game.html" frameborder="0"></iframe>
+            </div>
         </section>
     </main>
     <footer></footer>

@@ -10,8 +10,38 @@
     src: url('../fontes/04B_30__.TTF') format('truetype');
 }
 
+@font-face {
+    font-family: 'Pixelify';
+    src: url('../fontes/PixelifySans-VariableFont_wght.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+:root {
+    --cor01: #191427;
+    --cor02: #381b74;
+    --cor03: 
+    --cor04: 
+    --cor05: 
+    --cor06: 
+}
+
+:root {
+    --font01: "Mulish", sans-serif;
+    --font02: "Pixelify Sans", sans-serif;
+    --font03: "Work Sans", sans-serif;
+    --font04: "Press Start 2P", system-ui;
+}
+
+:root {
+   --cursor-default: url(../Imagens/Mouse.png), auto;
+   --cursor-pointer: url(../Imagens/MouseClick.png), auto;
+}
+
 * {
     box-sizing: border-box;
+    letter-spacing: 1px;scroll-behavior: smooth;
 }
 
 body {
@@ -27,7 +57,102 @@ body {
     font-family: monospace;
 }
 
- .slider {
+a, button {
+    cursor: var(--cursor-pointer);
+
+}
+
+html {
+    cursor: var(--cursor-default);
+}
+
+/* Cabeçalho */
+
+header {
+    padding: 28px 8%;
+    background-color: var(--cor01);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#logo-text {
+    font-family: 'Pixelify', sans-serif;   
+    font-size: 40px;
+    color: white;
+    margin-right: auto;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_logo {
+    margin-right: 24px;
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    font-family: "Mulish", sans-serif;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s;
+}
+
+.nav-item a:hover {
+    color: var(--cor02);
+}
+
+.arrow {
+    transition: transform 0.3s;
+}
+
+.nav-item a:hover .arrow {
+    transform: rotate(90deg); 
+}
+
+/* Conteúdo principal */
+
+.text, 
+#text-game {
+    color: white;
+    text-align: center;
+    margin: 50px;
+}
+
+h1 {
+    font-family: 'Pixelify';
+    font-size: 50px;
+    margin-top: 200px;
+}
+
+h2 {
+    margin: 60px;
+    font-size: 25px;
+    font-family: 'Pixelify';
+}
+
+p {
+    font-family: "Mulish", sans-serif;
+    margin-top: -20px;
+    font-weight: 300;
+}
+
+
+
+.slider {
     position: relative;
     width: 100%;
     height: 370px;   
@@ -44,21 +169,73 @@ body {
     transition: 0.5s;
     left: calc(50% - 110px);
     top: 0;
+    box-shadow: 0px 0px 11px -2px rgba(0, 0, 0, 0.568);
+}
+
+.item:hover {
+    background-color: #8159f863;
+}
+
+.item:active {
+    box-shadow: 0px 0px 12px 3px #8159f863;
+    transition: 0.1s;
 }
 
 #next, #prev {
     position: absolute;
-    top: 40%;
+    top: 36%;
     color: white;
     background-color: transparent;
     border: none;
     font-size: xxx-large;
     font-weight: bold;
-    left: 91px;
+    left: 272px;
     z-index: 10;
 }
 
 #next {
     left: unset;
-    right: 110px;
+    right: 268px;
+}
+
+.img-slider {
+    width: 60px;
+    margin-top: 110px;
+}
+
+.img-center {
+    margin: auto;
+    display: block;
+    margin-top: 117.5px;
+    width: 45px;
+}
+
+.fundo {
+    background-color: rgba(255, 255, 255, 0.123);
+    max-width: 900px;
+    min-width: 400px;
+    box-shadow: 0px 0px 11px -2px rgba(0, 0, 0, 0.473);
+    height: 600px;
+    border-radius: 20px;
+    margin: auto;
+    padding: 50px;
+}
+
+.fundo2 {
+    background-image: url('../Imagens/fundo-vg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 700px;
+    min-width: 500px;
+    box-shadow: 0px 0px 11px -2px rgba(0, 0, 0, 0.473);
+    height: 500px;
+    border-radius: 20px;
+    margin: 100px auto;
+    padding: 50px;
+}
+
+iframe {
+    min-width: 300px;
+    max-width: 800px;
+    height: 100vh;
 }

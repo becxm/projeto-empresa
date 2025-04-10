@@ -36,3 +36,9 @@ prev.onclick = function() {
     active = active - 1 >= 0 ? active - 1 : active;
     loadShow();
 }
+
+document.addEventListener("keydown", function(event) {
+  if (event.code === "Space" && event.target === document.body) {
+    event.preventDefault();
+  }
+});
