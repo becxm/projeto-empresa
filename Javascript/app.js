@@ -42,3 +42,21 @@ document.addEventListener("keydown", function(event) {
     event.preventDefault();
   }
 });
+
+const botoes = document.querySelectorAll(".toggle-btn");
+
+  botoes.forEach(botao => {
+    botao.addEventListener("click", function(event) {
+      event.preventDefault();
+      const targetId = this.getAttribute("data-target");
+      const targetSection = document.getElementById(targetId);
+
+      if (targetSection.style.display === "none" || targetSection.style.display === "") {
+        targetSection.style.display = "block";
+      } else {
+        targetSection.style.display = "none";
+      }
+    });
+  });
+
+  

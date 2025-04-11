@@ -49,9 +49,9 @@
     </header>
     <main>
         <section class="text">
-            <h1>Empresa JONGAS</h1>
-            <p>Somos uma empresa especializada em soluções digitais completas.</p>
-            <h2>Selecione um meio de contato: </h2>
+            <h1 class="main">Empresa JONGAS</h1>
+            <p class="main">Somos uma empresa especializada em soluções digitais completas.</p>
+            <h2 class="main">Selecione um meio de contato: </h2>
         </section>
         <section class="slider-card">
                 <a class="link-slider" href="#text-game">
@@ -60,22 +60,23 @@
                         <img class="img-slider" src="Imagens/joytick-sem fundo.png" alt="">
                     </div>
                 </a>
-                <a class="link-slider" href="#whatsapp">
+                <a class="link-slider toggle-btn" href="#whatsapp" data-target="whatsapp">
                     <div class="item">
                         <img class="img-center" src="Imagens/whatsapp-logo.webp" alt="">
                     </div>
                 </a>
-                <a class="link-slider" href="#linkedin">
+                <a class="link-slider toggle-btn" href="#linkedin" data-target="linkedin">
                     <div class="item" >
                         <img class="img-center" src="Imagens/linkedin-logo.webp" alt="">
                     </div>
                 </a>
-                <a class="link-slider" href="#instagram">
+                <a class="link-slider toggle-btn" href="#instagram" data-target="instagram">
                     <div class="item">
                         <img class="img-center" src="Imagens/instagram-logo.webp" alt="">
                     </div>
                 </a>
-                <a class="link-slider" href="#email">
+                <a class="link-slider toggle-btn" href="#email" 
+                data-target="email">
                     <div class="item">
                         <img class="img-slider" src="Imagens/email-pixel-semfundo.png" alt=""> 
                     </div>
@@ -85,39 +86,103 @@
             </div>
         </section>
 
-        <section id="whatsapp">
+        <section id="whatsapp" style="display: none;">
             <div class="fundo2">
-                <p class="font-game">WhatsApp</p>
+                <div class="tela">
+                    <p class="font-game">WhatsApp</p>
+                </div>    
             </div>
         </section>
 
-        <section id="linkedin">
+        <section id="linkedin" style="display: none;">
             <div class="fundo2">
-                
+                <div class="tela">
+                    <p class="font-game">LinkedIn</p>
+                </div>  
             </div>
         </section>
 
-        <section id="instagram">
+        <section id="instagram" style="display: none;">
             <div class="fundo2">
-                
+                <div class="tela">
+                    <p class="font-game">Instagram</p>
+                </div>  
             </div>
         </section>
 
-        <section id="email">
+        <section id="email" style="display: none;">
             <div class="fundo2">
-                
+                <div class="tela">
+                    <p class="font-game">E-mail</p>
+                </div>  
             </div>
         </section>
 
         <section id="text-game">
-            <h2>Agradecemos o seu contato. Aguarde nossa resposta e aproveite esse tempo da melhor forma possível.</h2>
+            <h2 class="main">Agradecemos o seu contato. Aguarde nossa resposta e aproveite esse tempo da melhor forma possível.</h2>
         </section>
         <section class="fundo">
             <div id="iframe">
                 <iframe src="game.html" frameborder="0"></iframe>
             </div>
         </section>
+        <div id="img-jongas">
+            <img src="Imagens/JongasEspiando.png" alt="JongasEspiando" height="100px">
+        </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>JONGAS</h1>
+                <p>Olá eu sou o Jongas!</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <img src="Imagens/instagram_pixel_logo_icon_181922.png" alt="instagram"> </a>
+                    <a href="#" class="footer-link" id="instagram">
+                        <img src="Imagens/linkedin_pixel_logo_icon_181925.png" alt="linkedin"> </a>
+                    <a href="#" class="footer-link" id="instagram">
+                        <img src="Imagens/whatsapp_pixel_logo_icon_181923.png" alt="whatzapp"> </a>
+                </div>
+            </div>
+            <ul class="footer-list">
+                <li>
+                    <h3>Índice</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Inicio</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Serviços</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Novidades</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Sobre</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Contato</a>
+                </li>
+            </ul>
+            <div id="footer_subscribe">
+                <h3>Inscrever-se</h3>
+                <p>
+                    Insira seu e-mail para receber notificações sobre nossas novidades
+                </p>
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+            <img class="logo_jongas" src="Imagens/JongasLogo_128x128.png" alt="jogass" height="">
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2025 all rights reserve
+        </div>
+    </footer>
 </body>
 </html>
