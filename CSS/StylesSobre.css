@@ -137,10 +137,10 @@ header {
 
 .btn {
     position: absolute;
-    top: 80%;
-    left: 90%;
-    transform: translate(-220%, -40%);
-    -ms-transform: translate(-220%, -40%);
+    width: 12%;
+    top: 82vh;
+    left: 79vw;
+    transform: translate(-100%, -50%);
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -152,19 +152,20 @@ header {
 
     0%,
     100% {
-        transform: translateY(-220%, -40%) scale(1);
+        transform: translateY(-100%, -50%) scale(1);
     }
 
     50% {
-        transform: translate(-220%, -40%) scale(1.06);
+        transform: translate(-100%, -50%) scale(1.06);
     }
 }
 
 .btn-left {
     position: absolute;
-    top: 80%;
-    right: 90%;
-    transform: translate(180%, -40%);
+    width: 12%;
+    top: 82vh;
+    right: 83vw;
+    transform: translate(100%, -50%);
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -180,11 +181,11 @@ header {
 
     0%,
     100% {
-        transform: translateY(180%, -40%) scale(1);
+        transform: translateY(100%, -50%) scale(1);
     }
 
     50% {
-        transform: translate(180%, -40%) scale(1.06);
+        transform: translate(100%, -50%) scale(1.06);
     }
 }
 
