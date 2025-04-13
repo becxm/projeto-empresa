@@ -240,9 +240,13 @@ p.main {
     z-index: 10;
 }
 
+#prev {
+    left: 10%;
+  }
+
 #next {
     left: unset;
-    right: 268px;
+    right: 10%;
 }
 
 .img-slider {
