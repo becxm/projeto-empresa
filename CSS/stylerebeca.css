@@ -145,7 +145,7 @@ header {
 .hamburger {
     border: none;
     background: none;
-    border-top: 3px solid #4B33C7;
+    border-top: 3px solid white;
     cursor: pointer;
     display: none;
 }
@@ -156,7 +156,7 @@ header {
     display: block;
     width: 30px;
     height: 3px;
-    background: #4B33C7;
+    background: white;
     margin-top: 5px;
 }
 
