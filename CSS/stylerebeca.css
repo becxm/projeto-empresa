@@ -55,6 +55,7 @@
     margin: 0px;
     padding: 0px;
     font-size: 16px;
+    
 }
 
 body {
@@ -83,7 +84,7 @@ html {
 /* Cabeçalho */
 
 header {
-    padding: 28px 8%;
+    padding: 28px;
     background-color: var(--cor01);
     position: absolute;
     top: 0;
@@ -103,6 +104,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-decoration: none;
+    margin-inline: auto;
 }
 
 #nav_logo {
@@ -113,6 +116,7 @@ header {
     display: flex;
     list-style: none;
     gap: 24px;
+    margin: auto;
 }
 
 .nav-item a {
@@ -138,9 +142,90 @@ header {
     transform: rotate(90deg); 
 }
 
+.hamburger {
+    border: none;
+    background: none;
+    border-top: 3px solid white;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin-top: 5px;
+}
+
 @media (max-width: 900px) {
+    .hamburger {
+        display: block;
+        z-index: 1;
+    }
+
+    .hamburger.active > .header {
+        background: transparent;
+        box-shadow: none;
+    }
+
+    #nav_list {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        min-width: 500px;
+        height: 50vh;
+        background: #191427;
+        clip-path: circle(10px at 100vw -15%);
+        transition: 1s ease-out;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+    }
+
+    #nav_list a {
+        font-size: 20px;
+        opacity: 0;
+        color: white;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    #nav_list a:hover {
+        font-size: 22px;
+        padding: 20px;
+        border-radius: 25px;
+        transition: 0.3s;
+        color: #603da7;
+    }
+
+    #navbar.active #nav_list a {
+        opacity: 1;
+
+    }
+
+    #navbar.active #nav_list {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+        width: 100vw;
+        min-width: 500px;
+        max-width: 3000px;
+    }
+
     .nav-item {
         display: none;
+    }
+
+    #navbar.active .nav-item {
+        display: block;
+    }
+
+    #navbar {
+        margin-left: -55px;
     }
 
     #nav_logo {
