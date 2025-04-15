@@ -467,6 +467,28 @@ iframe {
     }
 }
 
+form {
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+input {
+    margin: auto;
+}
+
+#nome {
+    width: 242px;
+}
+
+#iemail {
+    width: 234px;
+}
+
+label {
+    color: white;
+}
+
 /* Rodapé */
 
 footer {
