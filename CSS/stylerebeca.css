@@ -457,6 +457,16 @@ iframe {
     position: relative;
 }
 
+@media (max-width: 700px) {
+    #game {
+        display: none;
+    }
+
+    #img-jongas {
+        margin-top: 100px;
+    }
+}
+
 /* Rodapé */
 
 footer {

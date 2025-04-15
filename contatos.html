@@ -125,20 +125,30 @@
                 <div class="tela">
                     <p class="font-game">E-mail</p>
                     <p class="texto-contato">Entre em contato conosco via E-mail: </p>
-                    <a class="texto-contato2" href="https://wa.me/5521981383022" target="_blank">(21) 98138-3022</a>
+
+                    <form action="cadastro.php" method="post" autocomplete="on">
+                        <label for="iemail">E-mail:</label>
+                        <input type="email" name="email" id="iemail"> <br>
+                        <label for="imsg">Sua mensagem: </label>
+                        <textarea name="msg" id="imsg"></textarea>
+                    </form>
+
                     <img class="img-contato" src="Imagens/email-pixel-semfundo.png">
                 </div>  
             </div>
         </section>
 
-        <section id="text-game">
-            <h2 class="main-game">Agradecemos o seu contato. Aguarde nossa resposta e aproveite esse tempo da melhor forma possível.</h2>
-        </section>
-        <section class="fundo">
-            <div id="iframe">
-                <iframe src="game.html" frameborder="0"></iframe>
-            </div>
-        </section>
+        <div id="game">
+            <section id="text-game">
+                <h2 class="main-game">Agradecemos o seu contato. Aguarde nossa resposta e aproveite esse tempo da melhor forma possível.</h2>
+            </section>
+            <section class="fundo">
+                <div id="iframe">
+                    <iframe src="game.html" frameborder="0"></iframe>
+                </div>
+            </section>
+        </div>
+
         <div id="img-jongas">
             <img src="Imagens/JongasEspiando.png" alt="JongasEspiando" height="100px">
         </div>
