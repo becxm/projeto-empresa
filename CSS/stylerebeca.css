@@ -384,7 +384,7 @@ p.main {
     }
 
     .fundo2 {
-        max-width: 400px;
+        max-width: 430px;
     }
 
     .font-game {
@@ -402,20 +402,52 @@ p.main {
     font-weight: bold;
     text-align: center;
     color: white;
-    padding-top: 30px;
-    font-size: clamp(20px, 6vw, 65px);
+    padding-top: 40px;
+    font-size: clamp(40px, 6.5vw, 65px);
     text-shadow: 1px 4px 0px #15011d42;
 }
 
 .tela {
     background-color: rgba(255, 255, 255, 0.384);
-    width: clamp(300px, 90%, 600px);
-    height: clamp(300px, 60vw, 440px);
+    width: clamp(450px, 90%, 600px);
+    height: clamp(450px, 60vw, 460px);
     border-radius: 20px 0px;
     box-shadow: 0px 0px 11px -2px rgba(0, 0, 0, 0.445);
     overflow: hidden;
     position: relative;
     aspect-ratio: 4 / 3;
+}
+
+.texto-contato {
+    text-align: center;
+    display: block;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 70px;
+    font-size: 18px;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.507);
+}
+
+a.texto-contato2 {
+    text-align: center;
+    display: block;
+    color: white;
+    font-family: 'Gamer', sans-serif;
+    margin-top: 70px;
+    font-size: clamp(15px, 3vw, 20px);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #381b74;
+    transition: all 0.3s ease-in-out;
+}
+
+.img-contato {
+    display: block;
+    margin: auto;
+    margin-top: 90px;
+    width: 45px;
 }
 
 iframe {
