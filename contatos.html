@@ -55,12 +55,12 @@
             <h2 class="main">Selecione um meio de contato: </h2>
         </section>
         <section class="slider-card">
-                <a class="link-slider" href="#text-game">
-                    <div class="slider" >
-                        <div class="item">
+                <div class="slider">
+                <div class="item">
+                    <a class="link-slider" href="#text-game">
                         <img class="img-slider" src="Imagens/joytick-sem fundo.png" alt="">
-                    </div>
-                </a>
+                    </a>
+                </div>
                 <a class="link-slider toggle-btn" href="#whatsapp" data-target="whatsapp">
                     <div class="item">
                         <img class="img-center" src="Imagens/whatsapp-logo.webp" alt="">
@@ -82,8 +82,8 @@
                         <img class="img-slider" src="Imagens/email-pixel-semfundo.png" alt=""> 
                     </div>
                 </a>
-                <button id="next">></button>
-                <button id="prev"><</button>
+                <button type="button" id="next">></button>
+                <button type="button" id="prev"><</button>
             </div>
         </section>
 
@@ -128,11 +128,10 @@
 
                     <form action="cadastro.php" method="post" autocomplete="on">
                         <label for="nome">Nome: </label>
-                        <input type="text" name="nome" id="nome" required><br><br>
+                        <input type="text" name="nome" id="n1" required> <br><br>
 
                         <label for="email">E-mail:</label>
-                        <input type="email" name="email" id="iemail" required > <br><br> 
-
+                        <input type="email" name="email" id="e1" required> <br><br> 
 
                         <label for="msg">Mensagem: </label>
                         <textarea name="msg" id="msg" cols="20" rows="3"></textarea> <br><br>

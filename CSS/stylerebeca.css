@@ -64,7 +64,8 @@ body {
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
-    display: flex;
+    width: 100%;
+    display: block;
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -88,7 +89,7 @@ header {
     background-color: var(--cor01);
     position: absolute;
     top: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 1000;
 }
 
@@ -176,7 +177,7 @@ header {
         top: 0;
         left: 0;
         width: 100vw;
-        min-width: 500px;
+        min-width: 100%;
         height: 50vh;
         background: #191427;
         clip-path: circle(10px at 100vw -15%);
