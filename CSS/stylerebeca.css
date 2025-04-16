@@ -466,6 +466,10 @@ iframe {
     #img-jongas {
         margin-top: 100px;
     }
+
+    .item-game {
+        display: none;
+    }
 }
 
 form {
