@@ -55,12 +55,12 @@
             <h2 class="main">Selecione um meio de contato: </h2>
         </section>
         <section class="slider-card">
-                <a class="link-slider" href="#text-game">
-                    <div class="slider" >
-                        <div class="item">
+                <div class="slider">
+                <div class="item item-game">
+                    <a class="link-slider" href="#game">
                         <img class="img-slider" src="Imagens/joytick-sem fundo.png" alt="">
-                    </div>
-                </a>
+                    </a>
+                </div>
                 <a class="link-slider toggle-btn" href="#whatsapp" data-target="whatsapp">
                     <div class="item">
                         <img class="img-center" src="Imagens/whatsapp-logo.webp" alt="">
@@ -82,8 +82,8 @@
                         <img class="img-slider" src="Imagens/email-pixel-semfundo.png" alt=""> 
                     </div>
                 </a>
-                <button id="next">></button>
-                <button id="prev"><</button>
+                <button type="button" id="next">></button>
+                <button type="button" id="prev"><</button>
             </div>
         </section>
 
@@ -91,6 +91,9 @@
             <div class="fundo2">
                 <div class="tela">
                     <p class="font-game">WhatsApp</p>
+                    <p class="texto-contato">Entre em contato conosco via WhatsApp: </p>
+                    <a class="texto-contato2" href="https://wa.me/5521981383022" target="_blank">(21) 98138-3022</a>
+                    <img class="img-contato" src="Imagens/whatsapp-logo.webp" alt="">
                 </div>    
             </div>
         </section>
@@ -99,6 +102,9 @@
             <div class="fundo2">
                 <div class="tela">
                     <p class="font-game">LinkedIn</p>
+                    <p class="texto-contato">Entre em contato conosco via LinkedIn: </p>
+                    <a class="texto-contato2" href="https://www.linkedin.com/in/rebeca-lima-013751350/" target="_blank">LinkedIn Jongas</a>
+                    <img class="img-contato" src="Imagens/linkedin-logo.webp">
                 </div>  
             </div>
         </section>
@@ -107,6 +113,9 @@
             <div class="fundo2">
                 <div class="tela">
                     <p class="font-game">Instagram</p>
+                    <p class="texto-contato">Entre em contato conosco via Instagram: </p>
+                    <a class="texto-contato2" href="https://www.instagram.com/jongasofc/" target="_blank">Instagram Jongas</a>
+                    <img class="img-contato" src="Imagens/instagram-logo.webp">
                 </div>  
             </div>
         </section>
@@ -115,18 +124,37 @@
             <div class="fundo2">
                 <div class="tela">
                     <p class="font-game">E-mail</p>
+                    <p class="texto-contato">Entre em contato conosco via E-mail: </p>
+
+                    <form action="cadastro.php" method="post" autocomplete="on">
+                        <label for="nome">Nome: </label>
+                        <input type="text" name="nome" id="n1" required> <br><br>
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="e1" required> <br><br> 
+
+                        <label for="msg">Mensagem: </label>
+                        <textarea name="msg" id="msg" cols="20" rows="3"></textarea> <br><br>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+
+                    <img class="img-contato" src="Imagens/email-pixel-semfundo.png">
                 </div>  
             </div>
         </section>
 
-        <section id="text-game">
-            <h2 class="main-game">Agradecemos o seu contato. Aguarde nossa resposta e aproveite esse tempo da melhor forma possível.</h2>
-        </section>
-        <section class="fundo">
-            <div id="iframe">
-                <iframe src="game.html" frameborder="0"></iframe>
-            </div>
-        </section>
+        <div id="game">
+            <section id="text-game">
+                <h2 class="main-game">Agradecemos o seu contato. Aguarde nossa resposta e aproveite esse tempo da melhor forma possível.</h2>
+            </section>
+            <section class="fundo">
+                <div id="iframe">
+                    <iframe src="game.html" frameborder="0"></iframe>
+                </div>
+            </section>
+        </div>
+
         <div id="img-jongas">
             <img src="Imagens/JongasEspiando.png" alt="JongasEspiando" height="100px">
         </div>
@@ -138,11 +166,11 @@
                 <p>Olá eu sou o Jongas!</p>
 
                 <div id="footer_social_media">
-                    <a href="#" class="footer-link" id="instagram">
+                    <a href="contatos.html" class="footer-link" id="instagram">
                         <img src="Imagens/instagram_pixel_logo_icon_181922.png" alt="instagram"> </a>
-                    <a href="#" class="footer-link" id="instagram">
+                    <a href="contatos.html" class="footer-link" id="instagram">
                         <img src="Imagens/linkedin_pixel_logo_icon_181925.png" alt="linkedin"> </a>
-                    <a href="#" class="footer-link" id="instagram">
+                    <a href="contatos.html" class="footer-link" id="instagram">
                         <img src="Imagens/whatsapp_pixel_logo_icon_181923.png" alt="whatzapp"> </a>
                 </div>
             </div>
