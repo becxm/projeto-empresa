@@ -435,3 +435,32 @@ footer {
     font-family: var(--font03);
     color: white;
 }
+
+/*PHP*/
+
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .produto {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    width: 220px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
+  
+  .produto img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
