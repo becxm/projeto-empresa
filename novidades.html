@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Imagens\JongasLogo16x16.ico">
+    <link rel="stylesheet" href="CSS/StylesNovidades.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Jongas | Novidades</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <img id="nav_logo" src="Imagens/JongasLogo.png" alt="Logo Jongas" height="80px">
+            <div id="logo-text">JONGAS</div>
+            <button class="hamburger"></button>
+            <ul id="nav_list">
+                <li class="nav-item">
+                    <a href="Index.html">
+                        Início <i class="fa-solid fa-chevron-right arrow"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services">
+                        Serviços <i class="fa-solid fa-chevron-right arrow"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="novidades.html">
+                        Novidades <i class="fa-solid fa-chevron-right arrow"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="Sobre.html">
+                            Sobre <i class="fa-solid fa-chevron-right arrow"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contatos.html">
+                        Contato <i class="fa-solid fa-chevron-right arrow"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <nav id="nav-secord">
+        <h1>Novidades da Empresa</h1>
+    <p>Acompanhe os últimos projetos, atualizações e conquistas da empresa!</p>
+    </nav>
+    <div class="container">
+        <!-- Filtros -->
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="frontend">Front-end</button>
+          <button class="filter-btn" data-filter="backend">Back-end</button>
+          <button class="filter-btn" data-filter="design">Design</button>
+          <button class="filter-btn" data-filter="equipe">Equipe</button>
+        </div>
+    
+        <!-- Grid de novidades -->
+        <div class="news-grid">
+          <div class="card frontend">
+            <img src="Imagens\Background.png" alt="Imagem do projeto">
+            <div class="card-content">
+              <div class="category">Front-end</div>
+              <div class="title">Novo site institucional lançado</div>
+              <div class="description">
+                <p>Finalizamos o site da empresa XPTO com React e animações em GSAP.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card frontend">
+            <img src="Imagens\Background.png" alt="Evento">
+            <div class="card-content">
+              <div class="category">Front-end</div>
+              <div class="title">XPTO agora com um site moderno, rápido e animado</div>
+              <div class="description">
+                <p class="text">Nossa equipe de Front-end foi responsável pela construção de interfaces modernas, acessíveis 
+                e responsivas para websites e aplicações web. Utilizamos tecnologias como React, HTML5, CSS3 (com SASS)
+                 e JavaScript moderno (ES6+) para transformar protótipos criados no Figma em experiências digitais 
+                 fluidas e de alta performance.
+                 <span class="overflow" data-state="visible" aria-hidden="true"></span> </p>
+                <br>
+                 <button class="toggle" data-state="more"> Veja mais <i class="fa-solid fa-chevron-right arrow"></i> </button>
+              </div>
+              
+            </div>
+          </div>
+          <div class="card backend">
+            <img src="Imagens\Background.png" alt="Imagem da API">
+            <div class="card-content">
+              <div class="category">Back-end</div>
+              <div class="title">API escalável com NestJS</div>
+              <div class="description">
+                Nova API com autenticação JWT e PostgreSQL.
+              </div>
+            </div>
+          </div>
+          <div class="card design">
+            <img src="Imagens\Background.png" alt="Imagem de design">
+            <div class="card-content">
+              <div class="category">Design</div>
+              <div class="title">Sistema de design no Figma</div>
+              <div class="description">
+                Criamos um sistema de componentes reutilizáveis.
+              </div>
+            </div>
+          </div>
+    
+          <div class="card equipe">
+            <img src="Imagens\Background.png" alt="Evento">
+            <div class="card-content">
+              <div class="category">Equipe</div>
+              <div class="title">Programa de Estágio</div>
+              <div class="description">
+                Venha trabalhar com a gente!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+<script src="Javascript/novidades.js"></script>
+</html>

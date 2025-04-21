@@ -303,9 +303,9 @@ header {
     justify-content: center;
     margin-bottom: 5%;
     margin-right: 2%;
-    font-size: 0.9rem;
+    font-size: 0.8vw;
+    width: 30%;
     text-align: left;
-    width: 28%;
     color: #32cd32;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
@@ -352,13 +352,13 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    row-gap: 0px;
+    
 }
 
 .membro {
     display: flex;
     align-items: center;
-    gap: 20px;
     width: 60%;
 }
 
