@@ -252,7 +252,6 @@ header {
     margin-left: 50%;
     background-color: transparent;
     border: none;
-    cursor: pointer;
     animation: pulse 1.50s infinite;
 }
 
@@ -283,6 +282,7 @@ header {
 .btn:hover,
 .btn-left:hover {
     animation: none;
+    cursor: var(--cursor-pointer)
 }
 
 @keyframes pulse-left {
@@ -373,7 +373,7 @@ header {
 .imagem {
     margin-top: 100px;
     margin-bottom: 100px;
-    width: 55%;
+    width: 30%;
     height: auto;
     transform: rotate(-15deg);
 }
