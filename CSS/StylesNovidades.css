@@ -34,20 +34,20 @@
 }
 
 body {
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 150px;
     background-image: url(../Imagens/backgroundapenas.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    min-height: 100vh;
-    width: 100%;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
     font-family: monospace;
-    flex-direction: column;
     color: white;
-    padding-top: 150px;
+   
 }
 
 
@@ -328,7 +328,6 @@ header {
     border-radius: 20px;
     transition: 0.3s;
     cursor: var(--cursor-pointer);
-    margin-top: 0.5rem;
   }
 
   .toggle:hover {
@@ -351,6 +350,11 @@ header {
   .hidden {
     display: none;
   }
+
+  #img-jongas {
+    display: flex;
+    justify-content: center;
+}
 
   /* Rodapé */
 
@@ -387,23 +391,23 @@ header {
     font-family: var(--font03);
 }
 
-.footer-list {
+.footer-links {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.55rem;
     list-style: none;
 }
 
-.footer-list h3 {
+.footer-links h3 {
     font-family: var(--font02);
 }
 
-.footer-list .footer-link {
+.footer-links .footer-link {
     color: white;
     transition: color 0.3s;
 }
 
-.footer-list .footer-link:hover {
+.footer-links .footer-link:hover {
     color: var(--cor02);
 }
 
@@ -442,7 +446,12 @@ header {
     font-size: 1.125rem;
     height: 100%;
     border-radius: 0px 4px 4px 0px;
-    cursor: pointer;
+    cursor: var(--cursor-pointer);
+    transition: all 0.4s;
+}
+
+#input_group button:hover {
+    opacity: 0.8;
 }
 
 #footer_copyright {
@@ -452,3 +461,13 @@ header {
     font-size: 0.9rem;
     font-family: var(--font03);
 }
+
+@media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 2fr);
+        gap: 2rem;
+        padding: 2rem 2rem; 
+    }
+
+}
+
