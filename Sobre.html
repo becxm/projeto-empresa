@@ -8,9 +8,11 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="CSS\StylesSobre.css">
-    <script src="javascript/sobre.js"></script>
     <link rel="icon" href="Imagens\JongasLogo16x16.ico">
     <title>Jongas | Sobre</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="javascript/sobre.js"></script>
+    <script src="Javascript/app.js" defer></script>
 </head>
 
 <body>
@@ -18,6 +20,7 @@
         <nav id="navbar">
             <img id="nav_logo" src="Imagens/JongasLogo.png" alt="Logo Jongas" height="80px">
             <div id="logo-text">JONGAS</div>
+            <button class="hamburger"></button>
             <ul id="nav_list">
                 <li class="nav-item">
                     <a href="Index.html">
@@ -25,22 +28,22 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#services">
+                    <a href="servicos.html">
                         Serviços <i class="fa-solid fa-chevron-right arrow"></i>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#news">
+                    <a href="novidades.html">
                         Novidades <i class="fa-solid fa-chevron-right arrow"></i>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="Sobre.html">
-                        Sobre <i class="fa-solid fa-chevron-right arrow"></i>
+                            Sobre <i class="fa-solid fa-chevron-right arrow"></i>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact">
+                    <a href="contatos.html">
                         Contato <i class="fa-solid fa-chevron-right arrow"></i>
                     </a>
                 </li>
@@ -49,7 +52,7 @@
     </header>
     <menu>
         <section id="section_one">
-            <h1 class="text-primary">Sobre nós</h1>
+            <h1 class="text-primary">Sobre a Empresa</h1>
             <div class="selection-container">
                 <img src="Imagens/GBA.png" alt="gameboy" class="img-gameboy">
                 <button class="btn" onclick="trocarTexto()">
@@ -70,28 +73,63 @@
             <h1 class="text-primary">Conheça a Nossa Equipe</h1>
             <div id="section_div">
                 <div class="membro">
-                    <img class="imagem" src="Imagens/e6f5104d-a577-48e3-9f7b-1283b2b7393b.png" alt="GiuliaPixel">
+                    <img class="imagem" src="Imagens/thiago-pixel.png" alt="ThiagoPixel">
                     <p class="text-secord">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quae
                         adipisci libero repellendus necessitatibus iste a nisi fuga dolorem odio sed ex natus aspernatur
-                        accusantium totam porro, animi, veniam itaque.</p>
+                        accusantium totam porro, animi, veniam itaque.
+                        <br>
+                        <br> 
+                        <a href="#" class="footer-link" id="instagram">
+                            <img src="Imagens\instagram-preto-e-branco.png" alt="instagram" width="10%"> </a>
+                            <a href="#" class="footer-link" id="instagram">
+                                <img src="Imagens\whatsapp-preto-e-branco.png" alt="whatsapp" width="10%"> </a> 
+                                <a href="#" class="footer-link" id="instagram">
+                                    <img src="Imagens\linkedin-preto-e-branco.png" alt="linkedin" width="10%"> </a></p>
                 </div>
                 <div class="membro">
-                    <img class="imagem" src="Imagens/e6f5104d-a577-48e3-9f7b-1283b2b7393b.png" alt="GiuliaPixel">
+                    <img class="imagem" src="Imagens/gabriel-pixel.png" alt="GiuliaPixel">
                     <p class="text-secord">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quae
                         adipisci libero repellendus necessitatibus iste a nisi fuga dolorem odio sed ex natus aspernatur
-                        accusantium totam porro, animi, veniam itaque.</p>
+                        accusantium totam porro, animi, veniam itaque.
+                        <br>
+                        <br> 
+                        <a href="#" class="footer-link" id="instagram">
+                            <img src="Imagens\instagram-preto-e-branco.png" alt="instagram" width="10%"> </a>
+                            <a href="#" class="footer-link" id="instagram">
+                                <img src="Imagens\whatsapp-preto-e-branco.png" alt="whatsapp" width="10%"> </a> 
+                                <a href="#" class="footer-link" id="instagram">
+                                    <img src="Imagens\linkedin-preto-e-branco.png" alt="linkedin" width="10%"> </a>
+                                </p>
                 </div>
                 <div class="membro">
-                    <img class="imagem" src="Imagens/e6f5104d-a577-48e3-9f7b-1283b2b7393b.png" alt="GiuliaPixel">
+                    <img class="imagem" src="Imagens/matheus-pixel.png" alt="GiuliaPixel">
                     <p class="text-secord">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quae
                         adipisci libero repellendus necessitatibus iste a nisi fuga dolorem odio sed ex natus aspernatur
-                        accusantium totam porro, animi, veniam itaque.</p>
+                        accusantium totam porro, animi, veniam itaque.
+                        <br>
+                        <br> 
+                        <a href="#" class="footer-link" id="instagram">
+                            <img src="Imagens\instagram-preto-e-branco.png" alt="instagram" width="10%"> </a>
+                            <a href="#" class="footer-link" id="instagram">
+                                <img src="Imagens\whatsapp-preto-e-branco.png" alt="whatsapp" width="10%"> </a> 
+                                <a href="#" class="footer-link" id="instagram">
+                                    <img src="Imagens\linkedin-preto-e-branco.png" alt="linkedin" width="10%"> </a>
+                                </p>
                 </div>
                 <div class="membro">
-                    <img class="imagem" src="Imagens/e6f5104d-a577-48e3-9f7b-1283b2b7393b.png" alt="GiuliaPixel">
+                    <img class="imagem" src="Imagens/rebeca-pixel.png" alt="GiuliaPixel">
                     <p class="text-secord">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quae
                         adipisci libero repellendus necessitatibus iste a nisi fuga dolorem odio sed ex natus aspernatur
-                        accusantium totam porro, animi, veniam itaque.</p>
+                        accusantium totam porro, animi, veniam itaque.
+                        <br>
+                        <br> 
+                        <a href="#" id="instagram">
+                            <img src="Imagens\instagram-preto-e-branco.png" alt="instagram" width="10%"> </a>
+                            <a href="#" id="whatsapp">
+                                <img src="Imagens\whatsapp-preto-e-branco.png" alt="whatsapp" width="10%"> </a> 
+                                <a href="#" id="linkedin">
+                                    <img src="Imagens\linkedin-preto-e-branco.png" alt="linkedin" width="10%"> </a>
+                                </p>
                 </div>
             </div>
             <div id="img-jongas">
@@ -104,36 +142,23 @@
             <div id="footer_contacts">
                 <h1>JONGAS</h1>
                 <p>Olá eu sou o Jongas!</p>
-
                 <div id="footer_social_media">
                     <a href="#" class="footer-link" id="instagram">
                         <img src="Imagens/instagram_pixel_logo_icon_181922.png" alt="instagram"> </a>
-                    <a href="#" class="footer-link" id="instagram">
+                    <a href="#" class="footer-link" id="linkedin">
                         <img src="Imagens/linkedin_pixel_logo_icon_181925.png" alt="linkedin"> </a>
-                    <a href="#" class="footer-link" id="instagram">
+                    <a href="#" class="footer-link" id="whatzapp">
                         <img src="Imagens/whatsapp_pixel_logo_icon_181923.png" alt="whatzapp"> </a>
                 </div>
             </div>
-            <ul class="footer-list">
-                <li>
-                    <h3>Índice</h3>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Inicio</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Serviços</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Novidades</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Sobre</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Contato</a>
-                </li>
-            </ul>
+            <div class="footer-links">
+            <h3>Índice</h3>
+              <a href="#" class="footer-link">Início</a>
+              <a href="#" class="footer-link">Serviços</a>
+              <a href="#" class="footer-link">Novidades</a>
+              <a href="#" class="footer-link">Sobre</a>
+              <a href="#" class="footer-link">Contato</a>
+            </div>
             <div id="footer_subscribe">
                 <h3>Inscrever-se</h3>
                 <p>
@@ -146,7 +171,6 @@
                     </button>
                 </div>
             </div>
-            <img class="logo_jongas" src="Imagens/JongasLogo_128x128.png" alt="jogass" height="">
         </div>
         <div id="footer_copyright">
             &#169

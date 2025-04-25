@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Imagens\JongasLogo16x16.ico">
+    <link rel="stylesheet" href="CSS/StylesNovidades.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Jongas | Novidades</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <img id="nav_logo" src="Imagens/JongasLogo.png" alt="Logo Jongas" height="80px">
+            <div id="logo-text">JONGAS</div>
+            <button class="hamburger"></button>
+            <ul id="nav_list">
+                <li class="nav-item">
+                    <a href="Index.html">
+                        Início <i class="fa-solid fa-chevron-right arrow"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="servicos.html">
+                        Serviços <i class="fa-solid fa-chevron-right arrow"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="novidades.html">
+                        Novidades <i class="fa-solid fa-chevron-right arrow"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="Sobre.html">
+                            Sobre <i class="fa-solid fa-chevron-right arrow"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contatos.html">
+                        Contato <i class="fa-solid fa-chevron-right arrow"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <nav id="nav-secord">
+        <h1>Novidades da Empresa</h1>
+    <p>Acompanhe os últimos projetos, atualizações e conquistas da empresa!</p>
+    </nav>
+    <div class="container">
+        <!-- Filtros -->
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="frontend">Front-end</button>
+          <button class="filter-btn" data-filter="backend">Back-end</button>
+          <button class="filter-btn" data-filter="design">Design</button>
+          <button class="filter-btn" data-filter="equipe">Equipe</button>
+        </div>
+    
+        <!-- Grid de novidades -->
+        <div class="news-grid">
+          <div class="card frontend">
+            <img src="Imagens\Acessibilidade.png" alt="Imagem do projeto">
+            <div class="card-content">
+              <div class="category">Front-end</div>
+              <div class="title">Inclusão em Cada Detalhe</div>
+              <div class="description">
+                <p class="text">Acabamos de concluir um projeto onde garantimos que cada componente da interface fosse totalmente acessível para todos os usuários, 
+                  inclusive aqueles com deficiência visual e motora. Aplicamos boas práticas de semântica HTML, foco no teclado e suporte a leitores de tela. 
+                  O resultado foi uma navegação fluida, intuitiva e inclusiva. Nosso cliente ficou impressionado com o alcance ampliado e o impacto positivo da acessibilidade.
+                  <span class="overflow" data-state="visible" aria-hidden="true"></span> </p>
+                <br>
+                 <button class="toggle" data-state="more"> Veja mais <i class="fa-solid fa-chevron-right arrow"></i> </button>
+              </div>
+            </div>
+          </div>
+          <div class="card frontend">
+            <img src="Imagens\desenvolvimento-de-interfaces.png" alt="Evento">
+            <div class="card-content">
+              <div class="category">Front-end</div>
+              <div class="title">Nexora agora com um site moderno, rápido e animado</div>
+              <div class="description">
+                <p class="text">Nossa equipe de Front-end foi responsável pela construção de interfaces modernas, acessíveis 
+                e responsivas para websites e aplicações web. Utilizamos tecnologias como React, HTML5, CSS3 (com SASS)
+                 e JavaScript moderno (ES6+) para transformar protótipos criados no Figma em experiências digitais 
+                 fluidas e de alta performance.
+                 <span class="overflow" data-state="visible" aria-hidden="true"></span> </p>
+                <br>
+                 <button class="toggle" data-state="more"> Veja mais <i class="fa-solid fa-chevron-right arrow"></i> </button>
+              </div>
+            </div>
+          </div>
+          <div class="card backend">
+            <img src="Imagens\API.png" alt="Imagem da API">
+            <div class="card-content">
+              <div class="category">Back-end</div>
+              <div class="title">API escalável com NestJS</div>
+              <div class="description">
+                <p class="text">Lançamos uma API escalável e de alta performance utilizando NestJS, TypeScript e MongoDB, com foco em flexibilidade e robustez. 
+                  A arquitetura foi otimizada com caching, pagination e rate limiting para garantir alta performance. 
+                  Implementamos autenticação segura via JWT e proteção contra vulnerabilidades comuns. A escalabilidade horizontal do MongoDB facilita o crescimento conforme a demanda.
+                  <span class="overflow" data-state="visible" aria-hidden="true"></span></p>
+                <br>
+                 <button class="toggle" data-state="more"> Veja mais <i class="fa-solid fa-chevron-right arrow"></i> </button>
+              </div>
+            </div>
+          </div>
+          <div class="card frontend">
+            <img src="Imagens\mobile.png" alt="Imagem de design">
+            <div class="card-content">
+              <div class="category">Front-end</div>
+              <div class="title">Inovando no design de aplicativos mobile</div>
+              <div class="description">
+                <p class="text">Em parceria com nossa equipe, criamos protótipos interativos para iOS e Android que garantem experiências fluídas; 
+                  desenvolvemos um guia de estilo mobile‑first para padronizar cores, tipografia e espaçamento; conduzimos testes de performance e 
+                  adaptabilidade em diferentes dispositivos; e iteramos soluções com base em feedback de usuários para otimizar usabilidade e eficiência.
+                <span class="overflow" data-state="visible" aria-hidden="true"></span></p>
+                <br>
+                 <button class="toggle" data-state="more"> Veja mais <i class="fa-solid fa-chevron-right arrow"></i> </button>
+              </div>
+            </div>
+          </div>
+          <div class="card design">
+            <img src="Imagens\tendencias.png" alt="Imagem de design">
+            <div class="card-content">
+              <div class="category">Design</div>
+              <div class="title">Pesquisa e Tendências</div>
+              <div class="description">
+                <p class="text">Realizamos mapeamento de comportamentos e análise de dados para desenvolver identidades que conectam marcas e público-alvo. 
+                  Nosso trabalho traduz insights emergentes em design estratégico, fortalecendo a relevância e a inovação de cada projeto.
+                <span class="overflow" data-state="visible" aria-hidden="true"></span></p>
+                <br>
+                 <button class="toggle" data-state="more"> Veja mais <i class="fa-solid fa-chevron-right arrow"></i> </button>
+              </div>
+            </div>
+          </div>
+          <div class="card design">
+            <img src="Imagens\identidade.png" alt="Imagem de design">
+            <div class="card-content">
+              <div class="category">Design</div>
+              <div class="title">Identidade Visual</div>
+              <div class="description">
+                <p class="text">Como sua parceira em design, dedicamos nossa expertise para criar uma identidade visual única que refletiu os valores e a personalidade da marca.
+              Cada elemento — desde a paleta de cores até a tipografia — foi cuidadosamente selecionado para garantir coesão e memorabilidade em todos os pontos de contato.
+              Nosso processo colaborativo envolveu o cliente em cada etapa, assegurando que o resultado final fosse autêntico e estrategicamente alinhado aos objetivos de negócio.
+              Ficamos orgulhosos de ter transformado essa visão em uma presença visual marcante no mercado.
+              <span class="overflow" data-state="visible" aria-hidden="true"></span></p>
+                <br>
+                 <button class="toggle" data-state="more"> Veja mais <i class="fa-solid fa-chevron-right arrow"></i> </button>
+              </div>
+            </div>
+          </div>
+          <div class="card backend">
+            <img src="Imagens\BancoDeDados.png" alt="Imagem da API">
+            <div class="card-content">
+              <div class="category">Back-end</div>
+              <div class="title">Estrutura de Dados Sólida para Resultados Reais</div>
+              <div class="description">
+                <p class="text">Desenvolvemos para nosso cliente uma solução robusta de gerenciamento de banco de dados, unindo performance e segurança. 
+                  Realizamos modelagem completa com tabelas, relacionamentos e índices otimizados. Utilizamos tecnologias relacionais e NoSQL conforme as necessidades do projeto. 
+                  O resultado foi uma base confiável, ágil e preparada para o crescimento do negócio.
+                  <span class="overflow" data-state="visible" aria-hidden="true"></span></p>
+                <br>
+                 <button class="toggle" data-state="more"> Veja mais <i class="fa-solid fa-chevron-right arrow"></i> </button>
+              </div>
+            </div>
+          </div>
+          <div class="card design">
+            <img src="Imagens\Figma.png" alt="Imagem de Figma">
+            <div class="card-content">
+              <div class="category">Design</div>
+              <div class="title">Sistema de design modular no Figma</div>
+              <div class="description">
+                <p class="text">Nossa equipe desenvolveu uma biblioteca de componentes reutilizáveis que garante consistência visual e acelera o fluxo de trabalho; 
+                estruturamos tokens de cor, tipografia e espaçamento para ajustes globais eficientes; documentamos variações de estados (hover, ativo, desabilitado) 
+                diretamente no Figma; e criamos diretrizes de uso com exemplos de layout para orientar designers e desenvolvedores na aplicação do sistema.
+                <span class="overflow" data-state="visible" aria-hidden="true"></span></p>
+                <br>
+                 <button class="toggle" data-state="more"> Veja mais <i class="fa-solid fa-chevron-right arrow"></i> </button>
+              </div>
+            </div>
+          </div>
+          <div class="card equipe">
+            <img src="Imagens\Background.png" alt="Evento">
+            <div class="card-content">
+              <div class="category">Equipe</div>
+              <div class="title">Programa de Estágio</div>
+              <div class="description">
+                <p>Venha trabalhar com a gente!</p>
+                <br>
+                 <button class="toggle"> 
+                  <a href="https://forms.gle/wjwrT5h5hZ3oYhND7" target="_blank" class="toggle-btn"> Veja mais <i class="fa-solid fa-chevron-right arrow"></i> </a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="img-jongas">
+        <img src="Imagens/JongasEspiando.png" alt="JongasEspiando" height="100px">
+    </div>
+      <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>JONGAS</h1>
+                <p>Olá eu sou o Jongas!</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <img src="Imagens/instagram_pixel_logo_icon_181922.png" alt="instagram"> </a>
+                    <a href="#" class="footer-link" id="linkedin">
+                        <img src="Imagens/linkedin_pixel_logo_icon_181925.png" alt="linkedin"> </a>
+                    <a href="#" class="footer-link" id="whatzapp">
+                        <img src="Imagens/whatsapp_pixel_logo_icon_181923.png" alt="whatzapp"> </a>
+                </div>
+            </div>
+            <div class="footer-links">
+            <h3>Índice</h3>
+              <a href="#" class="footer-link">Início</a>
+              <a href="#" class="footer-link">Serviços</a>
+              <a href="#" class="footer-link">Novidades</a>
+              <a href="#" class="footer-link">Sobre</a>
+              <a href="#" class="footer-link">Contato</a>
+            </div>
+            <div id="footer_subscribe">
+                <h3>Inscrever-se</h3>
+                <p>
+                    Insira seu e-mail para receber notificações sobre nossas novidades
+                </p>
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2025 all rights reserve
+        </div>
+    </footer>
+</body>
+<script src="Javascript/novidades.js"></script>
+</html>
