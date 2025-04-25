@@ -225,7 +225,7 @@ header {
     align-items: center;
     justify-content: center;
     font-family: var(--font02);
-    font-size: 100%;
+    font-size: 3rem;
     margin-top: 3vw;
 }
 
@@ -234,9 +234,21 @@ header {
     align-items: center;
     justify-content: center;
     font-family: var(--font03);
-    font-size: 100%;
+    font-size: 1vw;
 }
-
+@media screen and (max-width: 768px) {
+    #nav-secord p{
+        font-size: 2vw;
+    }
+}
+@media screen and (max-width: 425px) {
+    #nav-secord h1{
+        font-size: 1.5rem;
+    }
+    #nav-secord p{
+        font-size: 0.4rem;
+    }
+}
 /* Novidades */
 
 .container {
@@ -468,6 +480,5 @@ header {
         gap: 2rem;
         padding: 2rem 2rem; 
     }
-
 }
 
