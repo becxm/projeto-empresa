@@ -37,7 +37,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  cursor: url('Mouse.png'), default;
+  cursor: var(--cursor-default) url(../images/Mouse.png), auto;
   overflow: hidden;
   color: var(--cor05);
 }
@@ -93,14 +93,12 @@ h2 {
   background-color: var(--cor02);
   border: none;
   border-bottom: 6px solid rgba(0, 0, 0, 0.5);
-  cursor: var(--cursor-pointer);
+  cursor: var(--cursor-pointer) url(../images/MouseClick.png) auto;
   transition: all 0.2s ease;
   text-shadow: 2px 2px 0 var(--cor01);
   box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.1), 0 6px 10px rgba(0, 0, 0, 0.3);
   font-family: var(--font04);
   letter-spacing: 2px;
-  cursor: var(--cursor-pointer);
-  
 }
 
 .minecraft-button:hover {
@@ -114,7 +112,7 @@ h2 {
   background-color: var(--cor01);
   border-bottom: 3px solid rgba(0, 0, 0, 0.5);
   box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.05), 0 2px 5px rgba(0, 0, 0, 0.2);
-  cursor: var(--cursor-pointer);
+  cursor: var(--cursor-pointer) url(../images/MouseClick.png) auto;
 }
 
 .minecraft-button.secondary {
@@ -156,7 +154,7 @@ h2 {
   border-radius: 5px;
   transition: all 0.3s ease;
   font-family: var(--font04);
-  cursor: var(--cursor-pointer);
+   cursor: var(--cursor-pointer) url(../images/MouseClick.png), auto;
 }
 
 .social-icon:hover {
@@ -194,7 +192,7 @@ h2 {
   top: 10px;
   right: 20px;
   font-size: 28px;
-  cursor: var(--cursor-pointer);
+   cursor: var(--cursor-pointer) url(../images/MouseClick.png), auto;
   color: var(--cor04);
 }
 
@@ -207,7 +205,7 @@ h2 {
 
 .footer-rodape {
   width: 100%;
-  cursor: var(--cursor-pointer);
+  cursor: var(--cursor-default) url(../images/Mouse.png), auto;
 }
 
 #footer_content {
@@ -239,11 +237,11 @@ h2 {
 .footer-link {
   text-decoration: none;
   font-family: var(--font03);
-  cursor: var(--cursor-default);
+  cursor: var(--cursor-default) url(../images/Mouse.png), auto;
 }
 
 .footer-link:active {
-  cursor: var(--cursor-pointer);
+  cursor: var(--cursor-pointer) url(../images/MouseClick.png), auto;
 }
 
 
@@ -252,13 +250,13 @@ h2 {
   flex-direction: column;
   gap: 0.55rem;
   list-style: none;
-  cursor: var(--cursor-default);
+  cursor: var(--cursor-default) url(../images/Mouse.png), auto;
  
 }
 
 .footer-links h3 {
   font-family: var(--font02);
-  cursor: var(--cursor-default);
+  cursor: var(--cursor-default) url(../images/Mouse.png), auto;
 
 }
 
@@ -306,7 +304,7 @@ h2 {
     font-size: 2.35rem;
     height: 100%;
     border-radius: 0px 4px 4px 0px;
-    cursor: var(--cursor-pointer);
+    cursor: var(--cursor-pointer) url(../images/MouseClick.png), auto;
     transition: all 0.4s;
 }
 #input_group .fa-envelope {
