@@ -1,3 +1,3 @@
 document.getElementById('playButton').addEventListener('click', function() {
-  document.getElementById('seu-elemento-alvo').scrollIntoView({behavior: 'smooth'});
+  document.getElementById('A próxima pagina vai aqui').scrollIntoView({behavior: 'smooth'});
 });
