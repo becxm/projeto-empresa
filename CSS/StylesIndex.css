@@ -23,10 +23,10 @@
   box-sizing: border-box;
 }
 
-body {
+.body-main {
   margin: 0;
   padding: 0;
-  background-image: url(../images/background.png);
+  background-image: url('Imagens/backgroundapenas.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -77,29 +77,6 @@ h2 {
   font-family: var(--font02);
 }
 
-.team-container {
-  display: flex;
-  gap: 20px;
-  margin-bottom: 30px;
-  justify-content: center;
-}
-
-.pixel-face {
-  height: 60px;
-  width: 60px;
-  transition: transform 0.3s ease;
-  border: 3px solid var(--cor02);
-  border-radius: 10px;
-  padding: 5px;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.pixel-face:hover {
-  transform: scale(1.2) rotate(5deg);
-  border-color: var(--cor03);
-  box-shadow: 0 0 15px var(--cor03);
-}
-
 .buttons-container {
   display: flex;
   gap: 20px;
@@ -122,7 +99,7 @@ h2 {
   box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.1), 0 6px 10px rgba(0, 0, 0, 0.3);
   font-family: var(--font04);
   letter-spacing: 2px;
-  cursor: url(Mouse.png), pointer;
+  cursor: var(--cursor-pointer);
   
 }
 
@@ -137,7 +114,7 @@ h2 {
   background-color: var(--cor01);
   border-bottom: 3px solid rgba(0, 0, 0, 0.5);
   box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.05), 0 2px 5px rgba(0, 0, 0, 0.2);
-  cursor: url(MouseClick.png), pointer
+  cursor: var(--cursor-pointer);
 }
 
 .minecraft-button.secondary {
@@ -228,9 +205,9 @@ h2 {
 
 /* Rodapé */
 
-footer {
+.footer-rodape {
   width: 100%;
-  cursor: url('Mouse.png'), default;
+  cursor: var(--cursor-pointer);
 }
 
 #footer_content {
@@ -262,11 +239,11 @@ footer {
 .footer-link {
   text-decoration: none;
   font-family: var(--font03);
-  cursor: url('Mouse.png'), var(--cursor-default);
+  cursor: var(--cursor-default);
 }
 
 .footer-link:active {
-  cursor: url('MouseClick.png'), var(--cursor-pointer);
+  cursor: var(--cursor-pointer);
 }
 
 
@@ -275,13 +252,13 @@ footer {
   flex-direction: column;
   gap: 0.55rem;
   list-style: none;
-  cursor: url('Mouse.png'), var(--cursor-default);
+  cursor: var(--cursor-default);
  
 }
 
 .footer-links h3 {
   font-family: var(--font02);
-  cursor: url('Mouse.png'), var(--cursor-default);
+  cursor: var(--cursor-default);
 
 }
 
