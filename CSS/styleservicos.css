@@ -319,41 +319,28 @@ header {
 }
 
 
-/* Rodapé */
+  /* Rodapé */
 
-footer {
+  footer {
     width: 100%;
-
-}
-
-#img-jongas {
-    display: flex;
-    justify-content: center;
 }
 
 #footer_content {
     background-color: var(--cor01);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 2rem 1.5rem;
-    
-}
-
-#footer_contats {
-    padding: -10px;
+    padding: 3rem 3.5rem;
 }
 
 #footer_contacts h1 {
     margin-bottom: 0.75;
-    font-family: 'Pixelify', sans-serif;
+    font-family: var(--font02);
     text-transform: uppercase;
-    color: white;
 }
 
 #footer_contacts p {
     margin-bottom: 0.75;
     font-family: var(--font03);
-    color: white;
 }
 
 #footer_social_media {
@@ -367,24 +354,23 @@ footer {
     font-family: var(--font03);
 }
 
-.footer-list {
+.footer-links {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.55rem;
     list-style: none;
 }
 
-.footer-list h3 {
+.footer-links h3 {
     font-family: var(--font02);
-    color: white;
 }
 
-.footer-list .footer-link {
+.footer-links .footer-link {
     color: white;
     transition: color 0.3s;
 }
 
-.footer-list .footer-link:hover {
+.footer-links .footer-link:hover {
     color: var(--cor02);
 }
 
@@ -392,7 +378,6 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    color: white;
 }
 
 #footer_subscribe h3 {
@@ -421,10 +406,19 @@ footer {
     border: none;
     color: white;
     padding: 0px 1.25rem;
-    font-size: 1.125rem;
+    font-size: 2.35rem;
     height: 100%;
     border-radius: 0px 4px 4px 0px;
-    cursor: pointer;
+    cursor: var(--cursor-pointer);
+    transition: all 0.4s;
+}
+
+#input_group .fa-envelope {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+#input_group button:hover {
+    opacity: 0.8;
 }
 
 #footer_copyright {
@@ -433,8 +427,16 @@ footer {
     background-color: var(--cor01);
     font-size: 0.9rem;
     font-family: var(--font03);
-    color: white;
 }
+
+@media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 2fr);
+        gap: 2rem;
+        padding: 2rem 2rem; 
+    }
+}
+
 
 /*PHP*/
 
