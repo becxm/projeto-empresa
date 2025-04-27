@@ -121,25 +121,23 @@
         </section>
 
         <section id="email" style="display: none;">
-            <div class="fundo2">
-                <div class="tela">
+            <div class="fundo-email">
+                <div class="tela-email">
                     <p class="font-game">E-mail</p>
-                    <p class="texto-contato">Entre em contato conosco via E-mail: </p>
+                    <p class="texto-contato texto-email">Entre em contato conosco via E-mail: </p>
 
-                    <form action="cadastro.php" method="post" autocomplete="on">
+                    <form action="php/cadastro.php" method="post" autocomplete="on">
                         <label for="nome">Nome: </label>
                         <input type="text" name="nome" id="nome" required> <br><br>
 
-                        <label for="email">E-mail:</label>
-                        <input type="email" name="email" id="email" required> <br><br> 
+                        <label for="e-mail">E-mail:</label>
+                        <input type="email" name="email" id="e-mail" required> <br><br> 
 
                         <label for="mensagem">Mensagem: </label>
-                        <textarea name="mensagem" id="mensagem" cols="20" rows="3"></textarea> <br><br>
+                        <textarea name="mensagem" id="mensagem" cols="20" rows="3" required></textarea> <br><br>
 
                         <button type="submit">Enviar</button>
                     </form>
-
-                    <img class="img-contato" src="Imagens/email-pixel-semfundo.png">
                 </div>  
             </div>
         </section>
@@ -164,36 +162,23 @@
             <div id="footer_contacts">
                 <h1>JONGAS</h1>
                 <p>Olá eu sou o Jongas!</p>
-
                 <div id="footer_social_media">
-                    <a href="contatos.html" class="footer-link" id="instagram">
+                    <a href="#" class="footer-link" id="instagram">
                         <img src="Imagens/instagram_pixel_logo_icon_181922.png" alt="instagram"> </a>
-                    <a href="contatos.html" class="footer-link" id="instagram">
+                    <a href="#" class="footer-link" id="linkedin">
                         <img src="Imagens/linkedin_pixel_logo_icon_181925.png" alt="linkedin"> </a>
-                    <a href="contatos.html" class="footer-link" id="instagram">
+                    <a href="#" class="footer-link" id="whatzapp">
                         <img src="Imagens/whatsapp_pixel_logo_icon_181923.png" alt="whatzapp"> </a>
                 </div>
             </div>
-            <ul class="footer-list">
-                <li>
-                    <h3>Índice</h3>
-                </li>
-                <li>
-                    <a href="Index.html" class="footer-link">Inicio</a>
-                </li>
-                <li>
-                    <a href="servicos.html" class="footer-link">Serviços</a>
-                </li>
-                <li>
-                    <a href="novidades.html" class="footer-link">Novidades</a>
-                </li>
-                <li>
-                    <a href="Sobre.html" class="footer-link">Sobre</a>
-                </li>
-                <li>
-                    <a href="contatos.html" class="footer-link">Contato</a>
-                </li>
-            </ul>
+            <div class="footer-links">
+            <h3>Índice</h3>
+            <a href="Index.html" class="footer-link">Início</a>
+            <a href="servicos.html" class="footer-link">Serviços</a>
+            <a href="novidades.html" class="footer-link">Novidades</a>
+            <a href="Sobre.html" class="footer-link">Sobre</a>
+            <a href="contatos.html" class="footer-link">Contato</a>
+            </div>
             <div id="footer_subscribe">
                 <h3>Inscrever-se</h3>
                 <p>
@@ -206,7 +191,6 @@
                     </button>
                 </div>
             </div>
-            <img class="logo_jongas" src="Imagens/JongasLogo_128x128.png" alt="jogass" height="">
         </div>
         <div id="footer_copyright">
             &#169

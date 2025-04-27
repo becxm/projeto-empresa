@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="../CSS/styleservicos.css">
 </head>
 <body>
-  <h1>Catálogo de Produtos</h1>
+  <div id="logo-text"> - Catálogo de Produtos</div>
 
 <?php
 if (file_exists("produtos.txt")) {
