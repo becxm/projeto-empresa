@@ -1,0 +1,483 @@
+:root {
+    /* Cores do tema */
+    --cor01: #191427;
+    --cor02: #381b74;
+    --cor03: #603da7;
+    --cor04: #8b72c9;
+    --cor05: #ffffff;
+    
+    /* Fontes */
+    --font01: "Mulish", sans-serif;
+    --font02: "Pixelify Sans", sans-serif;
+    --font03: "Work Sans", sans-serif;
+    --font04: "Press Start 2P", cursive;
+    
+    /* Cursores personalizados */
+    --cursor-default: url(../images/Mouse.png), auto;
+    --cursor-pointer: url(../images/MouseClick.png), auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font01);
+    color: var(--cor05);
+    background-color: var(--cor01);
+    cursor: var(--cursor-default);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--cor02);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#logo-text {
+    font-family: var(--font02);   
+    font-size: 40px;
+    color: white;
+    margin-right: auto;
+}
+
+.logo {
+    font-family: var(--font04);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--cor05);
+}
+
+.tagline {
+    font-family: var(--font03);
+    font-weight: 300;
+}
+
+nav {
+    background-color: var(--cor03);
+    padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--cor05);
+    text-decoration: none;
+    font-family: var(--font03);
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    cursor: var(--cursor-pointer);
+}
+
+nav a:hover {
+    background-color: var(--cor02);
+}
+
+.hero {
+    background: linear-gradient(to bottom, var(--cor02), var(--cor03));
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: var(--font02);
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    font-family: var(--font01);
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--cor01);
+    color: var(--cor05);
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: var(--font03);
+    font-weight: 700;
+    transition: transform 0.3s, background-color 0.3s;
+    cursor: var(--cursor-pointer);
+}
+
+.btn:hover {
+    background-color: var(--cor04);
+    color: var(--cor01);
+    transform: translateY(-3px);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+h2 {
+    font-family: var(--font02);
+    color: var(--cor04);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--cor03);
+}
+
+h3 {
+    font-family: var(--font03);
+    color: var(--cor04);
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background-color: var(--cor02);
+    border-radius: 8px;
+    padding: 2rem;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card h3 {
+    font-family: var(--font02);
+    color: var(--cor05);
+}
+
+.service-card ul {
+    list-style-position: inside;
+    margin: 1rem 0;
+}
+
+.tech-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.tech-badge {
+    background-color: var(--cor03);
+    color: var(--cor05);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-family: var(--font03);
+    font-size: 0.9rem;
+}
+
+.process-steps {
+    counter-reset: step-counter;
+    list-style-type: none;
+}
+
+.process-steps li {
+    margin-bottom: 1.5rem;
+    padding-left: 3rem;
+    position: relative;
+}
+
+.process-steps li::before {
+    counter-increment: step-counter;
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--cor03);
+    color: var(--cor05);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font04);
+    font-size: 0.8rem;
+}
+
+.contact-info {
+    background-color: var(--cor02);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+
+.container {
+    text-align: center;
+}
+
+/* Botão Pixelado */
+.pixel-button {
+    position: relative;
+    display: inline-block;
+    background-color: var(--cor03);
+    border: none;
+    padding: 20px 30px;
+    margin: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: var(--cursor-pointer);
+    outline: none;
+    color: var(--cor05);
+    box-shadow: 
+        inset -4px -4px 0px 0px var(--cor02),  /* Sombra interna inferior direita */
+        inset 4px 4px 0px 0px var(--cor04);    /* Sombra interna superior esquerda */
+    
+    /* Bordas pixeladas externas */
+    /* Cima */
+    border-top: 4px solid var(--cor05);
+    /* Direita */
+    border-right: 4px solid var(--cor05);
+    /* Baixo */
+    border-bottom: 4px solid var(--cor05);
+    /* Esquerda */
+    border-left: 4px solid var(--cor05);
+    
+    /* Efeito de pixel nas bordas */
+    image-rendering: pixelated;
+    
+    /* Cantos pixelados */
+    clip-path: 
+        polygon(
+            0% 4px,     /* Canto superior esquerdo */
+            4px 0%,     /* Canto superior esquerdo */
+            calc(100% - 4px) 0%,    /* Canto superior direito */
+            100% 4px,   /* Canto superior direito */
+            100% calc(100% - 4px),  /* Canto inferior direito */
+            calc(100% - 4px) 100%,  /* Canto inferior direito */
+            4px 100%,   /* Canto inferior esquerdo */
+            0% calc(100% - 4px)     /* Canto inferior esquerdo */
+        );
+    
+    /* Animação ao pressionar */
+    transition: all 0.1s ease;
+}
+
+.pixel-button-text {
+    position: relative;
+    z-index: 1;
+    font-family: var(--font04);
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0px var(--cor01);
+}
+
+/* Efeito Hover */
+.pixel-button:hover {
+    background-color: var(--cor04);
+    box-shadow: 
+        inset -6px -6px 0px 0px var(--cor03),
+        inset 6px 6px 0px 0px var(--cor05);
+    transform: scale(1.02);
+}
+
+/* Efeito Active (quando pressionado) */
+.pixel-button:active {
+    transform: scale(0.98);
+    background-color: var(--cor02);
+    box-shadow: 
+        inset 4px 4px 0px 0px var(--cor01),
+        inset -2px -2px 0px 0px var(--cor03);
+    /* Move o texto levemente para baixo e direita ao pressionar */
+    padding: 22px 32px 18px 28px;
+}
+
+/* Efeito de brilho pixelado nas bordas ao ativar */
+.pixel-button:active::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.1) 2px,
+        transparent 2px,
+        transparent 4px
+    );
+    z-index: 0;
+}
+
+
+#img-jongas {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Rodapé */
+  
+  footer {
+    width: 100%;
+    cursor: url('Mouse.png'), default;
+  }
+  
+  #footer_content {
+    background-color: var(--cor01);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem 3.5rem;
+  }
+  
+  #footer_contacts h1 {
+    margin-bottom: 0.75;
+    font-family: var(--font02);
+    text-transform: uppercase;
+   
+  }
+  
+  #footer_contacts p {
+    margin-bottom: 0.75;
+    font-family: var(--font03);
+   
+  }
+  
+  #footer_social_media {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .footer-link {
+    text-decoration: none;
+    font-family: var(--font03);
+    cursor: url('Mouse.png'), var(--cursor-default);
+  }
+  
+  .footer-link:active {
+    cursor: url('MouseClick.png'), var(--cursor-pointer);
+  }
+  
+  
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    list-style: none;
+    cursor: url('Mouse.png'), var(--cursor-default);
+   
+  }
+  
+  .footer-links h3 {
+    font-family: var(--font02);
+    cursor: url('Mouse.png'), var(--cursor-default);
+  
+  }
+  
+  .footer-links .footer-link {
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .footer-links .footer-link:hover {
+    color: var(--cor02);
+  }
+  
+  #footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  #footer_subscribe h3 {
+    font-family: var(--font02);
+  }
+  
+  #footer_subscribe p {
+    font-family: var(--font03);
+  }
+  
+  #input_group {
+    display: flex;
+    align-items: center;
+    background-color: var(--cor02);
+    border-radius: 4px;
+  }
+  
+  #input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+  }
+  
+  #input_group button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: var(--cursor-pointer);
+    transition: all 0.4s;
+  }
+  
+  #input_group button:hover {
+    opacity: 0.8;
+  }
+  
+  #footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor01);
+    font-size: 0.9rem;
+    font-family: var(--font03);
+    margin-bottom: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 2fr);
+        gap: 2rem;
+        padding: 2rem 2rem; 
+    }
+  }
+
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+}
