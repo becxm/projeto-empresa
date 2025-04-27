@@ -225,7 +225,7 @@ header {
     align-items: center;
     justify-content: center;
     font-family: var(--font02);
-    font-size: 100%;
+    font-size: 3rem;
     margin-top: 3vw;
 }
 
@@ -234,9 +234,21 @@ header {
     align-items: center;
     justify-content: center;
     font-family: var(--font03);
-    font-size: 100%;
+    font-size: 1vw;
 }
-
+@media screen and (max-width: 768px) {
+    #nav-secord p{
+        font-size: 2vw;
+    }
+}
+@media screen and (max-width: 425px) {
+    #nav-secord h1{
+        font-size: 1.5rem;
+    }
+    #nav-secord p{
+        font-size: 0.4rem;
+    }
+}
 /* Novidades */
 
 .container {
@@ -360,6 +372,7 @@ header {
 
   footer {
     width: 100%;
+    font-family: white;
 }
 
 #footer_content {
@@ -443,13 +456,17 @@ header {
     border: none;
     color: white;
     padding: 0px 1.25rem;
-    font-size: 1.125rem;
+    font-size: 2.35rem;
     height: 100%;
     border-radius: 0px 4px 4px 0px;
     cursor: var(--cursor-pointer);
     transition: all 0.4s;
 }
 
+#input_group .fa-envelope {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
 #input_group button:hover {
     opacity: 0.8;
 }
@@ -468,6 +485,5 @@ header {
         gap: 2rem;
         padding: 2rem 2rem; 
     }
-
 }
 

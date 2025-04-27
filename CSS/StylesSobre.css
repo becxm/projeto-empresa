@@ -416,8 +416,9 @@ header {
        width: 25vw;
     }
 }
-/* Rodapé */
-footer {
+  /* Rodapé */
+
+  footer {
     width: 100%;
 }
 
@@ -499,16 +500,19 @@ footer {
 
 #input_group button {
     background-color: black;
-    border: none;
-    color: white;
-    padding: 0px 1.25rem;
-    font-size: 1.125rem;
-    height: 100%;
-    border-radius: 0px 4px 4px 0px;
-    cursor: var(--cursor-pointer);
-    transition: all 0.4s;
-}
-
+      border: none;
+      color: white;
+      padding: 0px 1.25rem;
+      font-size: 2.35rem;
+      height: 100%;
+      border-radius: 0px 4px 4px 0px;
+      cursor: var(--cursor-pointer);
+      transition: all 0.4s;
+  }
+  #input_group .fa-envelope {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
 #input_group button:hover {
     opacity: 0.8;
 }
@@ -527,8 +531,8 @@ footer {
         gap: 2rem;
         padding: 2rem 2rem; 
     }
-
 }
+
 
 
 
