@@ -338,12 +338,14 @@ header {
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 20px;
-    transition: 0.3s;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    overflow: hidden;
     cursor: var(--cursor-pointer);
   }
 
   .toggle:hover {
     background: var(--cor02);
+    transform: scale(1.05);
   }
 
   .overflow {
@@ -368,11 +370,22 @@ header {
     justify-content: center;
 }
 
+  .toggle-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    cursor: var(--cursor-pointer);
+  }
+
+  .fa-arrow-up-right-from-square {
+    margin-left: 0.5rem;
+  }
   /* Rodapé */
 
   footer {
     width: 100%;
-    font-family: white;
 }
 
 #footer_content {
