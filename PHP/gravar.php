@@ -21,7 +21,7 @@ if (move_uploaded_file($_FILES["imagem"]["tmp_name"], $caminho)) {
   $linha = "$nome|$descricao|$valor|$quantidade|$nomeImagem\n";
   file_put_contents("produtos.txt", $linha, FILE_APPEND);
 
-  echo "Produto cadastrado com sucesso! <a href='catalogo.php'>Ver catálogo</a>";
+  echo "Serviço cadastrado com sucesso! <a href='catalogo.php'>Ver catálogo</a>";
 } else {
   echo "Erro ao salvar imagem.";
 }

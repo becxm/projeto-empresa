@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<<<<<<< HEAD
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -60,69 +61,142 @@
                 </div>
                 
                 <div class="form-row">
+=======
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="CSS/styleservicos.css">
+        <link rel="icon" href="Imagens\JongasLogo16x16.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="Javascript/app.js" defer></script>
+        <title>Serviços - Jongas</title>
+    </head>
+    <body>
+        <header>
+            <nav id="navbar">
+                <img id="nav_logo" src="Imagens/JongasLogo.png" alt="Logo Jongas" height="80px">
+                <div id="logo-text">JONGAS</div>
+                <button class="hamburger"></button>
+                <ul id="nav_list">
+                    <li class="nav-item">
+                        <a href="Index.html">
+                            Início <i class="fa-solid fa-chevron-right arrow"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="servicos.html">
+                            Serviços <i class="fa-solid fa-chevron-right arrow"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="novidades.html">
+                            Novidades <i class="fa-solid fa-chevron-right arrow"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Sobre.html">
+                                Sobre <i class="fa-solid fa-chevron-right arrow"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contatos.html">
+                            Contato <i class="fa-solid fa-chevron-right arrow"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+       <section class="form-container"><a href="PHP/catalogo.php"><h2>Veja nosso Catálogo </h2></a></section>
+    
+        <main>
+            <section class="form-container">
+                <h2>Cadastrar Produto</h2>
+                <form action="PHP/gravar.php" method="post" enctype="multipart/form-data">
+>>>>>>> 2e03cb44f13f4209fe5d4a451806d0c5b6997605
                     <div class="form-group">
-                        <label for="valor">Valor:</label>
-                        <input type="number" id="valor" name="valor" step="0.01" required>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite o nome do serviço..." required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="quantidade">Quantidade:</label>
-                        <input type="number" id="quantidade" name="quantidade" required>
+                        <label for="descricao">Descrição:</label>
+                        <textarea id="descricao" name="descricao" placeholder="Fale sobre os nossos Serviços..." required></textarea>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="valor">Valor:</label>
+                            <input type="number" id="valor" name="valor" step="0.01" placeholder="Digite o valor do serviço..." required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="quantidade">Quantidade de pessoas:</label>
+                            <input type="number" id="quantidade" name="quantidade" placeholder="Pessoas envolvidas"required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="imagem">Imagem:</label>
+                        <input type="file" id="imagem" name="imagem" accept="image/*" required>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Salvar</button>
+
+                </form>
+            </section>
+            
+        </main>
+
+        <div id="img-jongas">
+            <img src="Imagens/JongasEspiando.png" alt="JongasEspiando" height="100px">
+        </div>
+
+        <footer>
+            <div id="footer_content">
+                <div id="footer_contacts">
+                    <h1>JONGAS</h1>
+                    <p>Olá eu sou o Jongas!</p>
+                    <div id="footer_social_media">
+                        <a href="#" class="footer-link" id="instagram">
+                            <img src="Imagens/instagram_pixel_logo_icon_181922.png" alt="instagram">
+                        </a>
+                        <a href="#" class="footer-link" id="linkedin">
+                            <img src="Imagens/linkedin_pixel_logo_icon_181925.png" alt="linkedin">
+                        </a>
+                        <a href="#" class="footer-link" id="whatzapp">
+                            <img src="Imagens/whatsapp_pixel_logo_icon_181923.png" alt="whatzapp">
+                        </a>
                     </div>
                 </div>
-                
-                <div class="form-group">
-                    <label for="imagem">Imagem:</label>
-                    <input type="file" id="imagem" name="imagem" accept="image/*" required>
+                <div class="footer-links">
+                    <h3>Índice</h3>
+                    <a href="Index.html" class="footer-link">Início</a>
+                    <a href="servicos.html" class="footer-link">Serviços</a>
+                    <a href="novidades.html" class="footer-link">Novidades</a>
+                    <a href="Sobre.html" class="footer-link">Sobre</a>
+                    <a href="contatos.html" class="footer-link">Contato</a>
                 </div>
-                
-                <button type="submit" class="submit-btn">Salvar</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <div id="footer_content">
-            <div id="footer_contacts">
-                <h1>JONGAS</h1>
-                <p>Olá eu sou o Jongas!</p>
-                <div id="footer_social_media">
-                    <a href="#" class="footer-link" id="instagram">
-                        <img src="Imagens/instagram_pixel_logo_icon_181922.png" alt="instagram"> </a>
-                    <a href="#" class="footer-link" id="linkedin">
-                        <img src="Imagens/linkedin_pixel_logo_icon_181925.png" alt="linkedin"> </a>
-                    <a href="#" class="footer-link" id="whatzapp">
-                        <img src="Imagens/whatsapp_pixel_logo_icon_181923.png" alt="whatzapp"> </a>
+                <div id="footer_subscribe">
+                    <h3>Inscrever-se</h3>
+                    <p>
+                        Insira seu e-mail para receber notificações sobre nossas novidades
+                    </p>
+                    <div id="input_group">
+                        <input type="email" id="email">
+                        <button>
+                            <i class="fa-regular fa-envelope"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="footer-links">
-            <h3>Índice</h3>
-            <a href="Index.html" class="footer-link">Início</a>
-            <a href="servicos.html" class="footer-link">Serviços</a>
-            <a href="novidades.html" class="footer-link">Novidades</a>
-            <a href="Sobre.html" class="footer-link">Sobre</a>
-            <a href="contatos.html" class="footer-link">Contato</a>
+            <div id="footer_copyright">
+                &#169
+                2025 all rights reserve
             </div>
-            <div id="footer_subscribe">
-                <h3>Inscrever-se</h3>
-                <p>
-                    Insira seu e-mail para receber notificações sobre nossas novidades
-                </p>
-                <form action="PHP/newsletter.php" method="post"> 
-                <div id="input_group">
-                  <label for="email"></label>
-                    <input type="email" id="email" name="email" required>
-                    <button type="submit">
-                        <i class="fa-regular fa-envelope"></i>
-                    </button>
-                </div>
-              </form>
-            </div>
-        </div>
-        <div id="footer_copyright">
-            &#169
-            2025 all rights reserve
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>

@@ -219,13 +219,18 @@ header {
     }
 }
 
+p {
+    font-family: var(--font02);
+    text-align: center;
+    margin: auto;
+}
 
 /* FORMULÁRIO DE PHP*/
 .form-container {
-    max-width: 800px;
-    width: 90%;
-    margin: 2rem auto;
-    padding: 2rem;
+    max-width: 650px;
+    width: 85%;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
     background-color: rgba(25, 20, 39, 0.8);
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(96, 61, 167, 0.3);
@@ -234,15 +239,15 @@ header {
 
 .form-container h2 {
     font-family: var(--font02);
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: white;
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     text-transform: uppercase;
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
 }
 
 .form-group label {
@@ -256,7 +261,7 @@ header {
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 0.8rem;
+    padding: 0.7rem;
     border: 1px solid var(--cor02);
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -266,7 +271,7 @@ header {
 
 .form-group textarea {
     resize: vertical;
-    min-height: 100px;
+    min-height: 90px;
 }
 
 .form-group input:focus,
@@ -287,13 +292,13 @@ header {
 
 .submit-btn {
     width: 100%;
-    padding: 1rem;
+    padding: 0.9rem;
     background-color: var(--cor02);
     color: white;
     border: none;
     border-radius: 5px;
     font-family: var(--font02);
-    font-size: 1.1rem;
+    font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -309,7 +314,8 @@ header {
     }
 
     .form-container {
-        padding: 1.5rem;
+        padding: 1.2rem;
+        width: 90%;
     }
 
     #footer_content {
@@ -321,8 +327,14 @@ header {
 
   /* Rodapé */
 
-  footer {
+  #img-jongas {
+    display: flex;
+    justify-content: center;
+ }
+
+footer {
     width: 100%;
+    color: white;
 }
 
 #footer_content {
@@ -468,7 +480,8 @@ header {
 }
 
 .produto:hover {
-    transform: translateY(-5px);
+    transform: scale(1.02);
+    opacity: 0.9;
     box-shadow: 0 0 15px var(--cor03);
 }
 
