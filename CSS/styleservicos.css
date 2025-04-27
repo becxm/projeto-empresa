@@ -219,6 +219,11 @@ header {
     }
 }
 
+p {
+    font-family: var(--font02);
+    text-align: center;
+    margin: auto;
+}
 
 /* FORMULÁRIO DE PHP*/
 .form-container {

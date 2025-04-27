@@ -6,7 +6,9 @@
   <link rel="stylesheet" href="../CSS/styleservicos.css">
 </head>
 <body>
-  <div id="logo-text"> - Catálogo de Produtos</div>
+  <section class="form-container">
+    <div id="logo-text">Catálogo de Serviços</div>
+  </section>
 
 <?php
 if (file_exists("produtos.txt")) {
@@ -20,12 +22,12 @@ if (file_exists("produtos.txt")) {
       <h3>$nome</h3>
       <p>$descricao</p>
       <p><strong>R$ $valor</strong></p>
-      <p>Estoque: $quantidade</p>
+      <p>Pessoas atuando no serviço: $quantidade</p>
     </div>";
   }
   echo "</div>";
 } else {
-  echo "<p>Nenhum produto cadastrado ainda.</p>";
+  echo "<p>Nenhum serviço cadastrado ainda.</p>";
 }
 ?>
 
