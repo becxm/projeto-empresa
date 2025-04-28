@@ -1,4 +1,3 @@
-
 /*js para o slider*/
 let items = document.querySelectorAll('.slider .item');
 let next = document.getElementById('next');
@@ -63,7 +62,6 @@ document.addEventListener("keydown", function(event) {
 });
 
 /*js para o menu hamburger*/
-
 const hamburger =  document.querySelector(".hamburger");
 
 const nav = document.querySelector("#navbar");
