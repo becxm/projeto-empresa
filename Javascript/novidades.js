@@ -41,8 +41,8 @@ const buttons = document.querySelectorAll(".filter-btn");
   
           btn.setAttribute('data-state', isMore ? 'less' : 'more');
           btn.innerHTML = isMore
-              ? 'Veja menos <i class="fa-solid fa-chevron-right arrow"></i>'
-              : 'Veja mais <i class="fa-solid fa-chevron-right arrow"></i>';
+              ? 'Leia menos <i class="fa-solid fa-chevron-right arrow"></i>'
+              : 'Leia mais <i class="fa-solid fa-chevron-right arrow"></i>';
   
           overflow.setAttribute('data-state', isMore ? 'hidden' : 'visible');
       });

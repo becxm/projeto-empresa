@@ -351,6 +351,12 @@ header {
 }
 }
 
+@media screen and (max-width: 425px) {
+    #text {
+        font-size: 0.9vw;
+        width: 45%;
+   }
+}
 /* MenuSecord */
 
 .selection-container p {
@@ -414,6 +420,11 @@ header {
 
     .imagem {
        width: 25vw;
+    }
+}
+@media screen and (max-width: 425px) {
+    .text-secord {
+        font-size: 75%;
     }
 }
   /* Rodapé */
