@@ -1,65 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="CSS/styleservicos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="Javascript/app.js"></script>
-    <script src="Javascript/index.js"></script>
-    <title>Serviços - Jongas</title>
-</head>
-<body>
-    <header>
-        <nav id="navbar">
-            <img id="nav_logo" src="Imagens/JongasLogo.png" alt="Logo Jongas" height="80px">
-            <div id="logo-text">JONGAS</div>
-            <button class="hamburger"></button>
-            <ul id="nav_list">
-                <li class="nav-item">
-                    <a href="Index.html">
-                        Início <i class="fa-solid fa-chevron-right arrow"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="servicos.html">
-                        Serviços <i class="fa-solid fa-chevron-right arrow"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="novidades.html">
-                        Novidades <i class="fa-solid fa-chevron-right arrow"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="Sobre.html">
-                            Sobre <i class="fa-solid fa-chevron-right arrow"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="contatos.html">
-                        Contato <i class="fa-solid fa-chevron-right arrow"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="form-container">
-            <h2>Cadastrar Produto</h2>
-            <form action="PHP/gravar.php" method="post" enctype="multipart/form-data">
-                <div class="form-group">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="descricao">Descrição:</label>
-                    <textarea id="descricao" name="descricao" required></textarea>
-                </div>
-                
-                <div class="form-row">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="CSS/styleservicos.css">
+        <link rel="icon" href="Imagens\JongasLogo16x16.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="Javascript/app.js" defer></script>
+        <title>Serviços - Jongas</title>
+    </head>
+    <body>
+        <header>
+            <nav id="navbar">
+                <img id="nav_logo" src="Imagens/JongasLogo.png" alt="Logo Jongas" height="80px">
+                <div id="logo-text">JONGAS</div>
+                <button class="hamburger"></button>
+                <ul id="nav_list">
+                    <li class="nav-item">
+                        <a href="Index.html">
+                            Início <i class="fa-solid fa-chevron-right arrow"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="servicos.html">
+                            Serviços <i class="fa-solid fa-chevron-right arrow"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="novidades.html">
+                            Novidades <i class="fa-solid fa-chevron-right arrow"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Sobre.html">
+                                Sobre <i class="fa-solid fa-chevron-right arrow"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contatos.html">
+                            Contato <i class="fa-solid fa-chevron-right arrow"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+       <section class="form-container"><a href="PHP/catalogo.php"><h2>Veja nosso Catálogo </h2></a></section>
+    
+        <main>
+            <section class="form-container">
+                <h2>Cadastrar Produto</h2>
+                <form action="PHP/gravar.php" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="nome">Nome:</label>
                         <input type="text" id="nome" name="nome" placeholder="Digite o nome do serviço..." required>
