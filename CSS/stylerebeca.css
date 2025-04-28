@@ -2,14 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
-@font-face {
-    font-family: 'Pixel';
-    src: url('../fontes/SuperPixel-m2L8j.ttf') format('truetype');
-}
 
 @font-face {
     font-family: 'Gamer';
@@ -21,25 +14,18 @@
     src: url('../fontes/PixelifySans-VariableFont_wght.ttf') format('truetype');
 }
 
-@font-face {
-    font-family: 'Keni';
-    src: url('../fontes/Kelvinized.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Daydream';
-    src: url('../fontes/Daydream.ttf') format('truetype');
-}
-
 :root {
     --cor01: #191427;
     --cor02: #381b74;
+    --cor03: #603da7;
+    --cor04: #8b72c9;
+    --cor05: #ffffff;
     --font01: "Mulish", sans-serif;
     --font02: "Pixelify", sans-serif;
     --font03: "Work Sans", sans-serif;
-    --font04: "Press Start 2P", system-ui;
-   --cursor-default: url(../Imagens/Mouse.png), auto;
-   --cursor-pointer: url(../Imagens/MouseClick.png), auto;
+    --font04: "Gamer", sans-serif;
+    --cursor-default: url(../Imagens/Mouse.png), auto;
+    --cursor-pointer: url(../Imagens/MouseClick.png), auto;
 }
 
 * {
@@ -90,7 +76,7 @@ header {
 
 
 #logo-text {
-    font-family: 'Pixelify', sans-serif;   
+    font-family: var(--font02);
     font-size: 40px;
     color: white;
     margin-right: auto;
@@ -107,7 +93,14 @@ header {
 #nav_logo {
     margin-right: 24px;
     margin-left: 60px;
+    transition: transform 0.5s ease;
+    filter: drop-shadow(0 0 10px #603da7);
 }
+
+#nav_logo:hover {
+    transform: scale(1.1) rotate(-3deg);
+    filter: drop-shadow(0 0 20px #8b72c9);
+} 
 
 #nav_list {
     display: flex;
@@ -119,7 +112,7 @@ header {
 .nav-item a {
     text-decoration: none;
     color: white;
-    font-family: "Work sans", sans-serif;
+    font-family: var(--font03);
     font-weight: 400;
     display: flex;
     align-items: center;
@@ -255,7 +248,7 @@ main {
 }
 
 h1.main {
-    font-family: 'Pixelify';
+    font-family: var(--font02);
     font-size: clamp(20px, 8vw, 65px);
     max-width: 750px;
     height: 150px;
@@ -293,7 +286,7 @@ h1.main {
 h2.main {
     margin: 60px;
     font-size: clamp(10px, 3vw, 25px);
-    font-family: 'Pixelify';
+    font-family: var(--font02);
     color: #8A71C7;
     animation: pulse 2s infinite 0.5s;
 }
@@ -314,11 +307,11 @@ h2.main-game {
     margin: 60px;
     font-size: clamp(16px, 3vw, 25px);
     text-wrap: balance;
-    font-family: 'Pixelify';
+    font-family: var(--font02);
 }
 
 p.main {
-    font-family: "Mulish", sans-serif;
+    font-family: var(--font01);
     margin-top: 30px;
     font-weight: 300;
     font-size: clamp(11px, 2vw, 16px);
@@ -477,7 +470,7 @@ p.main {
 
 
 .font-game {
-    font-family: "Pixelify", sans-serif;
+    font-family: var(--font02);
     font-weight: bold;
     text-align: center;
     color: #603DA7;
@@ -498,7 +491,7 @@ p.main {
     text-align: center;
     display: block;
     color: white;
-    font-family: 'Work Sans', sans-serif;
+    font-family: var(--font03);
     margin-top: 70px;
     font-size: 18px;
     text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.507);
@@ -512,13 +505,13 @@ a.texto-contato2 {
     text-align: center;
     display: block;
     color: white;
-    font-family: 'Gamer', sans-serif;
+    font-family: var(--font04);
     margin-top: 70px;
     font-size: clamp(15px, 3vw, 20px);
     text-decoration: none;
 }
 
-a:hover {
+a.texto-contato2:hover {
     color: #603DA7;
     transition: all 0.3s ease-in-out;
     animation: glitch 1.3s infinite;
@@ -564,7 +557,7 @@ form {
 form label {
     font-size: 16px;
     color: white;
-    font-family: 'Work Sans', sans-serif;
+    font-family: var(--font03);
 }
 
 form input,
@@ -577,7 +570,7 @@ form textarea {
     background-color: rgba(255, 255, 255, 0.2);
     color: white;
     font-size: 16px;
-    font-family: 'Work Sans', sans-serif;
+    font-family: var(--font03);
     outline: none;
     transition: border-color 0.3s;
 }
@@ -588,7 +581,7 @@ form textarea:focus {
 }
 
 form button {
-    font-family: 'Pixelify', cursive;
+    font-family: var(--font02);
     font-size: 20px;
     background-color: #381b74;
     border: 4px solid #8159f8;
