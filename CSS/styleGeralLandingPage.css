@@ -37,7 +37,7 @@ header {
     text-align: center;
 }
 
-header {
+.header-principal {
     padding: 28px;
     background-color: var(--cor01);
     position: absolute;
