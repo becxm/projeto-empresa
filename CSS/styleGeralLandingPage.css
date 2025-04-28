@@ -35,18 +35,9 @@ body {
 }
 
 header {
-    background-color: var(--cor02);
+    background-color: var(--cor01);
     padding: 2rem 0;
     text-align: center;
-}
-
-.header-principal {
-    padding: 28px;
-    background-color: var(--cor01);
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    z-index: 1000;
 }
 
 
@@ -235,7 +226,6 @@ header {
 }
 
 nav {
-    background-color: var(--cor03);
     padding: 1rem 0;
 }
 
