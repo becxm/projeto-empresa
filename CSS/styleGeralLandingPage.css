@@ -32,12 +32,6 @@ body {
 }
 
 header {
-    background-color: var(--cor02);
-    padding: 2rem 0;
-    text-align: center;
-}
-
-.header-principal {
     padding: 28px;
     background-color: var(--cor01);
     position: absolute;
