@@ -398,13 +398,13 @@ p.main {
 .fundo {
     background-color: rgba(255, 255, 255, 0.123);
     width: clamp(320px, 90%, 900px);
-    box-shadow: 0px 0px 11px -2px rgba(0, 0, 0, 0.473);
+    box-shadow: 0 0 20px #2b145775, 0 0 40px #1e0f3c;
     height: clamp(550px, 70vw,600px);
     border-radius: 20px 0px;
     margin: auto;
     margin-bottom: 200px;
     padding: clamp(20px, 5vw, 50px);
-    
+    border: 6px solid #221a3671;
 }
 
 .fundo2, 
@@ -414,7 +414,6 @@ p.main {
     background-size: cover;
     max-width: 700px;
     min-width: 300px;
-    box-shadow: 0px 0px 11px -2px rgba(0, 0, 0, 0.445);
     height: 500px;
     border-radius: 20px 0px;
     margin: 100px auto;
@@ -423,6 +422,8 @@ p.main {
     justify-content: center;
     align-items: center;
     padding: clamp(20px, 5vw, 50px);
+    box-shadow: 0 0 20px #2b145775, 0 0 40px #1e0f3c;
+    border: 6px solid #221a3671;
 }
 
 .fundo-email {
