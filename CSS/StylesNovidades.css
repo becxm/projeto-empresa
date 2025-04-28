@@ -156,7 +156,7 @@ header {
         top: 0;
         left: 0;
         width: 100vw;
-        min-width: 100%;
+        min-width: 360px;
         height: 50vh;
         background: #191427;
         clip-path: circle(10px at 100vw -15%);
@@ -166,6 +166,7 @@ header {
         align-items: center;
         gap: 0;
         pointer-events: none;
+        min-width: 0 !important;
     }
 
     #nav_list a {
