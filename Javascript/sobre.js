@@ -25,3 +25,4 @@ function trocarTexto2() {
     }
 
 window.onload = () => typeWriter(textos[0]);
+

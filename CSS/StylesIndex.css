@@ -26,7 +26,7 @@
 .body-main {
   margin: 0;
   padding: 0;
-  background-image: url('Imagens/backgroundapenas.png');
+  background-image: url(../Imagens/backgroundapenas.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
