@@ -1,3 +1,9 @@
+const hamburger =  document.querySelector(".hamburger");
+
+const nav = document.querySelector("#navbar");
+  
+hamburger.addEventListener("click", () => nav.classList.toggle("active"));
+
 const buttons = document.querySelectorAll(".filter-btn");
     const cards = document.querySelectorAll(".card");
 
@@ -41,4 +47,3 @@ const buttons = document.querySelectorAll(".filter-btn");
           overflow.setAttribute('data-state', isMore ? 'hidden' : 'visible');
       });
   });
-

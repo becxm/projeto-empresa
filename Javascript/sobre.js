@@ -25,3 +25,12 @@ function trocarTexto2() {
     }
 
 window.onload = () => typeWriter(textos[0]);
+
+const hamburger = document.querySelector(".hamburger");
+const navbar = document.querySelector("#navbar");
+
+if (hamburger && navbar) {
+  hamburger.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+  });
+}

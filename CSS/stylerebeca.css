@@ -26,6 +26,11 @@
     src: url('../fontes/Kelvinized.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Daydream';
+    src: url('../fontes/Daydream.ttf') format('truetype');
+}
+
 :root {
     --cor01: #191427;
     --cor02: #381b74;
@@ -253,9 +258,38 @@ main {
 h1.main {
     font-family: 'Pixelify';
     font-size: clamp(20px, 8vw, 65px);
+    width: 700px;
+    height: 150px;
+    background: #1207309a;
+    border: 6px solid #603DA7;
+    border-radius: 20px;
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px #2b1457, 0 0 40px #1e0f3c;
     margin-top: 200px;
     color: #603DA7;
+    animation: flicker 2.5s infinite;
+    text-shadow: 
+    2px 2px #321b5e,
+    4px 4px #2b1457,
+    6px 6px #1e0f3c;
 }
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    5% { opacity: 0.4; }
+    10% { opacity: 1; }
+    15% { opacity: 0.7; }
+    20% { opacity: 1; }
+    25% { opacity: 0.3; }
+    30% { opacity: 1; }
+    70% { opacity: 1; }
+    75% { opacity: 0.5; }
+    80% { opacity: 1; }
+    100% { opacity: 1; }
+  }
 
 h2.main {
     margin: 60px;
@@ -452,6 +486,7 @@ p.main {
     font-size: clamp(40px, 6.5vw, 60px);
     text-shadow: 1px 3px 0px #15011d42;
     animation: explode 1.4s ease-out;
+    text-decoration: underline;
 }
 
 @keyframes explode {
@@ -481,7 +516,7 @@ a.texto-contato2 {
     font-family: 'Gamer', sans-serif;
     margin-top: 70px;
     font-size: clamp(15px, 3vw, 20px);
-    text-decoration: overline;
+    text-decoration: none;
 }
 
 a:hover {

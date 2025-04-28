@@ -1,3 +1,5 @@
+
+/*js para o slider*/
 let items = document.querySelectorAll('.slider .item');
 let next = document.getElementById('next');
 let prev = document.getElementById('prev');
@@ -37,12 +39,6 @@ prev.onclick = function() {
     loadShow();
 }
 
-document.addEventListener("keydown", function(event) {
-  if (event.code === "Space" && event.target === document.body) {
-    event.preventDefault();
-  }
-});
-
 const botoes = document.querySelectorAll(".toggle-btn");
 
   botoes.forEach(botao => {
@@ -59,8 +55,17 @@ const botoes = document.querySelectorAll(".toggle-btn");
     });
   });
 
-  const hamburger =  document.querySelector(".hamburger");
+/*js para a tecla barra não interferir na página*/
+document.addEventListener("keydown", function(event) {
+  if (event.code === "Space" && event.target === document.body) {
+    event.preventDefault();
+  }
+});
 
-  const nav = document.querySelector("#navbar");
+/*js para o menu hamburger*/
+
+const hamburger =  document.querySelector(".hamburger");
+
+const nav = document.querySelector("#navbar");
   
-  hamburger.addEventListener("click", () => nav.classList.toggle("active"));
+hamburger.addEventListener("click", () => nav.classList.toggle("active"));
