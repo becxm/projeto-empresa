@@ -26,7 +26,10 @@
 body {
     font-family: var(--font01);
     color: var(--cor05);
-    background-color: var(--cor01);
+    background-image: url(../Imagens/backgroundapenas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     cursor: var(--cursor-default);
     line-height: 1.6;
 }
