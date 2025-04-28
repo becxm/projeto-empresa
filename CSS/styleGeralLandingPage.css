@@ -38,6 +38,12 @@ header {
     background-color: var(--cor01);
     padding: 2rem 0;
     text-align: center;
+    padding: 28px;
+    background-color: var(--cor01);
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
 }
 
 

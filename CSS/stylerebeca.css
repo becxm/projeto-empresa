@@ -209,7 +209,6 @@ header {
         clip-path: circle(1500px at 90% -15%);
         pointer-events: all;
         width: 100vw;
-        min-width: 500px;
         max-width: 3000px;
     }
 
@@ -258,7 +257,7 @@ main {
 h1.main {
     font-family: 'Pixelify';
     font-size: clamp(20px, 8vw, 65px);
-    width: 700px;
+    max-width: 750px;
     height: 150px;
     background: #1207309a;
     border: 6px solid #603DA7;
